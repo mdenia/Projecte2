@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Formulari</title>
-        <link rel="stylesheet" href="form-style.css">
+        <link rel="stylesheet" href="../../FormEsdeveniment-style.css">
     </head>
     <body>
         <div class="header">
