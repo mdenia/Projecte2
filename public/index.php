@@ -7,6 +7,8 @@
  include "../src/config.php";
  include "../src/controllers/ctrlIndex.php";
  include "../src/controllers/ctrlJson.php";
+ include "../src/controllers/CreateConsellController.php";
+ include "../src/controllers/CreateEsdevenimentController.php";
 
 /**
   * Carreguem les classes del Framework Emeset
@@ -34,8 +36,10 @@
  /* Front Controller, aquí es decideix quina acció s'executa */
  if($r == "") {
      $response = ctrlIndex($request, $response, $container);
- } elseif($r == "json") {
-  $response = ctrlJson($request, $response, $container);
+ } elseif($r == "createConsell") {
+  $response = createConsellController($request, $response, $container);
+} elseif($r == "createEsdeveniment") {
+  $response = createEsdevenimentController($request, $response, $container);
 } else {
      echo "No existeix la ruta";
  }
