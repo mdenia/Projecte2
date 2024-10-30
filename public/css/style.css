@@ -60,3 +60,13 @@ body {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
+.titolFormulari {
+    text-align: center;
+    font-weight: bold;
+}
+
+.textarea {
+    width: 50%;
+    height: 100px;
+}
