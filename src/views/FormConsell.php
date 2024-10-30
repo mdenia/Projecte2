@@ -13,9 +13,9 @@
         <div class="menuform">
             <form class="form">
                 <label for="TitolCnsll">Titol Consell:</label><br>
-                <input class="input" type="text" id="TitolCnsll" name="TitolCnsll" placeholder="Titol" require><br>
+                <input class="input" type="text" id="TitolCnsll" name="TitolConsell" placeholder="Titol" required><br>
                 <label for="DescripcioCnsll">Descripció breu Consell:</label><br>
-                <textarea class="textarea" id="DescripcioCnsll" name="DescripcioCnsll" placeholder="Descripcio" require></textarea><br>
+                <textarea class="textarea" id="DescripcioCnsll" name="DescripcioConsell" placeholder="Descripcio" required></textarea><br>
                 <label for="file">Text explicatiu</label><br>
                 <input class="input" type="file" id="file" name="file" placeholder="Fitxer.md" required><br>
                 <label for="Hashtags">Hashtags:</label><br>
