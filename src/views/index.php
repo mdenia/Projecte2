@@ -75,5 +75,7 @@
               </div>
             </div>
         </div>
+        <div class="col-md-4 text-end"><a href="index.php?r=createEsdeveniment" class="btn btn-warning">Afegir Esdeveniment</a></div>
+        <div class="col-md-4 text-end"><a href="index.php?r=createConsell" class="btn btn-warning">Afegir Consell</a></div>
     </body>
 </html>
