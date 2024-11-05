@@ -1,22 +1,5 @@
 <?php
-
-/**
- * Exemple per a M07.
- *
- * @author: Dani Prados dprados@cendrassos.net
- *
- * Classe gestiona la petició HTTP.
- **/
-
 namespace Emeset;
-
-/**
- * Request: Classe gestiona la petició HTTP.
- *
- * @author: Dani Prados dprados@cendrassos.net
- *
- * Encapsula la petició HTTP per permetre llegir-la com una entrada.
- **/
 class Request
 {
 
