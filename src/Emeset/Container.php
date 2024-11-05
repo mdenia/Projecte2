@@ -1,22 +1,5 @@
 <?php
-
-/**
- * Exemple per a M07.
- *
- * @author: Dani Prados dprados@cendrassos.net
- *
- * Classe contenidor,  té la responsabilitat d'instaciar els models i altres objectes.
- **/
-
 namespace Emeset;
-
-/**
- * Container: Classe contenidor.
- *
- * @author: Dani Prados dprados@cendrassos.net
- *
- * Classe contenidor, la responsabilitat d'instaciar els models i altres objectes.
- **/
 class Container
 {
     public $config = [];
