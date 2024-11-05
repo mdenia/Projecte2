@@ -24,7 +24,7 @@
         <div class="slider">
             <div class="carrussel">
                     <div class="card" style="width: 18rem; background-color: #2d572c;">
-                      <img class="imatgeCarrussel"  src="../../Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                      <img class="imatgeCarrussel"  src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -32,7 +32,7 @@
                       </div>
                     </div>
                     <div class="card" style="width: 18rem; background-color: #2d572c;">
-                      <img class="imatgeCarrussel"  src="../../Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                      <img class="imatgeCarrussel"  src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -40,7 +40,7 @@
                       </div>
                     </div>
                     <div class="card" style="width: 18rem; background-color: #2d572c;">
-                      <img class="imatgeCarrussel"  src="../../Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                      <img class="imatgeCarrussel"  src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -50,7 +50,7 @@
             </div>
             <div class="carrussel">
               <div class="card" style="width: 18rem; background-color: #2d572c;">
-                <img class="imatgeCarrussel"  src="../../Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                <img class="imatgeCarrussel"  src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -58,7 +58,7 @@
                 </div>
               </div>
               <div class="card" style="width: 18rem; background-color: #2d572c;">
-                <img class="imatgeCarrussel"  src="../../Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                <img class="imatgeCarrussel"  src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -66,7 +66,7 @@
                 </div>
               </div>
               <div class="card" style="width: 18rem; background-color: #2d572c;">
-                <img class="imatgeCarrussel"  src="../../Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                <img class="imatgeCarrussel"  src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
