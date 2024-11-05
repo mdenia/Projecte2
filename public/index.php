@@ -5,10 +5,11 @@
  */
 
  include "../src/config.php";
- include "../src/controllers/ctrlIndex.php";
+ include "../src/controllers/IndexController.php";
  include "../src/controllers/ctrlJson.php";
  include "../src/controllers/CreateConsellController.php";
  include "../src/controllers/CreateEsdevenimentController.php";
+ include "../src/controllers/CreateAnunciController.php";
 
 /**
   * Carreguem les classes del Framework Emeset
@@ -35,11 +36,13 @@
  
  /* Front Controller, aquí es decideix quina acció s'executa */
  if($r == "") {
-     $response = ctrlIndex($request, $response, $container);
+     $response = IndexController($request, $response, $container);
  } elseif($r == "createConsell") {
   $response = createConsellController($request, $response, $container);
 } elseif($r == "createEsdeveniment") {
   $response = createEsdevenimentController($request, $response, $container);
+} elseif($r == "createAnunci") {
+  $response = createAnunciController($request, $response, $container);
 } else {
      echo "No existeix la ruta";
  }

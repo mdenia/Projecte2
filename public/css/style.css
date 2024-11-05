@@ -5,11 +5,22 @@ body {
 }
 .header {
     background-color: #2d572c;
-    width: 100%;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
+}
+.headerButtons {
+    display: flex;
+    justify-content: center;
+}
+.headerButtons > div {
+    margin: 5px;
+    text-align: center;
+    line-height: 75px;
+}
+.CMDCorporation {
+    font-weight: bold;
 }
 .carrussel {
     display: flex;
@@ -72,7 +83,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .titolFormulari {
+    .titolFormulari, .CMDCorporation {
         font-size: 70px;
     }
 
