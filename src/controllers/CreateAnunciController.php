@@ -1,12 +1,12 @@
 <?php
 
-function ctrlIndex($request, $response, $container){
+function createAnunciController($request, $response, $container){
 
     $name = $request->get(INPUT_GET, "name");
 
     $response->set("name", $name);
 
-    $response->setTemplate("index.php");
+    $response->setTemplate("FormAnunci.php");
 
     return $response;
     

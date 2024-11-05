@@ -19,7 +19,12 @@
     </head>
     <body>
         <div class="header">
-            <h1>Projecte 2</h1>
+            <h1 class="CMDCorporation">CMD Corporation</h1>
+            <div class="headerButtons">
+              <div><a href="index.php?r=createEsdeveniment" class="btn btn-primary">Afegir Esdeveniment</a></div>
+              <div><a href="index.php?r=createConsell" class="btn btn-primary">Afegir Consell</a></div>
+              <div><a href="index.php?r=createAnunci" class="btn btn-primary">Afegir Anunci</a></div>
+            </div>
         </div>
         <div class="slider">
             <div class="carrussel">
@@ -75,7 +80,5 @@
               </div>
             </div>
         </div>
-        <div class="col-md-4 text-end"><a href="index.php?r=createEsdeveniment" class="btn btn-warning">Afegir Esdeveniment</a></div>
-        <div class="col-md-4 text-end"><a href="index.php?r=createConsell" class="btn btn-warning">Afegir Consell</a></div>
     </body>
 </html>
