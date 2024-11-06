@@ -14,24 +14,38 @@ try {
 }
 
 $sql->query("
-CREATE TABLE IF NOT EXISTS links (id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(255), url VARCHAR(255), description text default '');
 
-CREATE TABLE Usuari (ID_Usuari int NOT NULL, Nom varchar(255) NOT NULL, Cognom varchar(255) NOT NULL, Mail varchar(255) NOT NULL, Imatge varchar(255) NOT NULL, PRIMARY KEY (ID_Usuari));
-CREATE TABLE Esdeveniment (ID_Esdeveniment int NOT NULL, Títol varchar(255), Latitud float, Longitud float, Descripcio varchar(255), Data date , Hora )
+CREATE TABLE IF NOT EXISTS Usuari (ID_Usuari int NOT NULL, Nom varchar(255) NOT NULL, Cognom varchar(255) NOT NULL, Mail varchar(255) NOT NULL, Imatge varchar(255) NOT NULL, PRIMARY KEY (ID_Usuari));
 
+");
 
+$sql->query("
 
-
-
-
-
-
-
-
-
-
-
-
-
+CREATE TABLE IF NOT EXISTS Esdeveniment (ID_Esdeveniment int NOT NULL, Títol_Esdeveniment varchar(255) NOT NULL, Imatge varchar(255) NOT NULL, Latitud float NOT NULL, Longitud float NOT NULL, Descripcio_Esdeveniment varchar(255) NOT NULL, Data date NOT NULL, Hora time NOT NULL, Tipus varchar(255) NOT NULL, Num_Visualitzacions int NOT NULL, ID_Usuari int, PRIMARY KEY (ID_Esdeveniment), FOREIGN KEY (ID_Usuari) REFERENCES Usuari(ID_Usuari));
 
 "); // DATA (YYYY-MM-DD)
+
+$sql->query("
+
+CREATE TABLE IF NOT EXISTS Consell (ID_Consell int NOT NULL, Titol_Consell varchar(255) NOT NULL, Descripcio_Consell varchar(255) NOT NULL, Text_Explicatiu varchar(255) NOT NULL, Etiquetes varchar(255) NOT NULL, ID_Usuari int, PRIMARY KEY (ID_Consell), FOREIGN KEY (ID_Usuari) REFERENCES Usuari(ID_Usuari));
+
+");
+
+$sql->query("
+
+CREATE TABLE IF NOT EXISTS Anunci (ID_Anunci int NOT NULL, Titol_Anunci varchar(255) NOT NULL, Imatge varchar(255) NOT NULL, Descripcio_Anunci varchar(255) NOT NULL, Estat varchar(255) NOT NULL, Categoria varchar(255) NOT NULL, ID_Usuari int, PRIMARY KEY (ID_Anunci), FOREIGN KEY (ID_Usuari) REFERENCES Usuari(ID_Usuari));
+
+");
+
+$sql->query("
+
+CREATE TABLE IF NOT EXISTS Valoracions (ID_Valoracions int NOT NULL, Comentari_Valoracions varchar(255) NOT NULL, Valoracio int, ID_Esdeveniment int, ID_Usuari int, PRIMARY KEY (ID_Valoracions), FOREIGN KEY (ID_Esdeveniment) REFERENCES Esdeveniment(ID_Esdeveniment), FOREIGN KEY (ID_Usuari) REFERENCES Usuari(ID_Usuari));
+
+");
+/*
+$sql->query("
+
+INSERT INTO Esdeveniment ()
+insert into Usuari(0, test, test, test@test.com, )
+
+"); */
