@@ -42,10 +42,3 @@ $sql->query("
 CREATE TABLE IF NOT EXISTS Valoracions (ID_Valoracions int NOT NULL, Comentari_Valoracions varchar(255) NOT NULL, Valoracio int, ID_Esdeveniment int, ID_Usuari int, PRIMARY KEY (ID_Valoracions), FOREIGN KEY (ID_Esdeveniment) REFERENCES Esdeveniment(ID_Esdeveniment), FOREIGN KEY (ID_Usuari) REFERENCES Usuari(ID_Usuari));
 
 ");
-/*
-$sql->query("
-
-INSERT INTO Esdeveniment ()
-insert into Usuari(0, test, test, test@test.com, )
-
-"); */

@@ -5,11 +5,6 @@
  */
 
  include "../src/config.php";
- include "../src/controllers/IndexController.php";
- include "../src/controllers/ctrlJson.php";
- include "../src/controllers/CreateConsellController.php";
- include "../src/controllers/CreateEsdevenimentController.php";
- include "../src/controllers/CreateAnunciController.php";
 
 /**
   * Carreguem les classes del Framework Emeset
@@ -18,10 +13,12 @@
  include "../src/Emeset/Container.php";
  include "../src/Emeset/Request.php";
  include "../src/Emeset/Response.php";
+ include "../src/ProjectContainer.php";
 
  $request = new \Emeset\Request();
  $response = new \Emeset\Response();
  $container = new \Emeset\Container($config);
+ //$container = new ProjectContainer($config);
 
  /* 
   * Aquesta és la part que fa que funcioni el Front Controller.
@@ -36,14 +33,26 @@
  
  /* Front Controller, aquí es decideix quina acció s'executa */
  if($r == "") {
-     $response = IndexController($request, $response, $container);
- } elseif($r == "createConsell") {
+  include "../src/controllers/IndexController.php";
+  $response = IndexController($request, $response, $container);
+ } 
+ 
+ elseif($r == "createConsell") {
+  include "../src/controllers/CreateConsellController.php";
   $response = createConsellController($request, $response, $container);
-} elseif($r == "createEsdeveniment") {
+} 
+
+elseif($r == "createEsdeveniment") {
+  include "../src/controllers/CreateEsdevenimentController.php";
   $response = createEsdevenimentController($request, $response, $container);
-} elseif($r == "createAnunci") {
+}
+
+elseif($r == "createAnunci") {
+  include "../src/controllers/CreateAnunciController.php";
   $response = createAnunciController($request, $response, $container);
-} else {
+} 
+
+else {
      echo "No existeix la ruta";
  }
 
