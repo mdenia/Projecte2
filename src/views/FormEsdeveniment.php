@@ -7,7 +7,10 @@
     </head>
     <body>
         <div class="header">
-            <h1>Projecte 2</h1>
+            <h1 class="CMDCorporation">CMD Corporation</h1>
+            <div class="headerButtons">
+                <div><a href="index.php?r=" class="btn btn-primary">Torna Menú Principal</a></div>
+            </div>
         </div>
         <h1 class="titolFormulari">Nou Esdeveniment</h1>
         <div class="menuform">
@@ -17,8 +20,8 @@
                 <label for="ubicacioEsd">Ubicació Esdeveniment:</label><br>
                 <input class="input" type="number" id="ubicacioEsd" name="Latitud" required placeholder="Latitud"><br>
                 <input class="input" type="number" id="ubicacioEsd" name="Longitud" required placeholder="Longitud"><br>
-                <label for="fileImatge">Imatge de l'Esdeveniment</label><br>
-                <input class="input" type="file" id="fileImatge" name="fileImatge" aria-label="Fitxer de la imatge" required><br>
+                <label for="fileImatge">Imatges de l'Esdeveniment</label><br>
+                <input class="input" type="file" id="fileImatge" name="fileImatge" aria-label="Fitxer de la imatge" multiple required><br>
                 <label for="dataEsd">Data i Hora Esdeveniment:</label><br>
                 <input class="input" type="date" id="dataEsd" name="dataEsdeveniment" aria-glabel="Reistra dia/mes/any de l'esdeveniment" required>
                 <input class="input" type="time" id="dataEsd" name="horaEsdeveniment" aria-label="Registra l'hora de l'esdeveniment" required><br>

@@ -3,11 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <title>Formulari Consell</title>
-        <link rel="stylesheet" href="/css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/custom-bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="header">
-            <h1>Projecte 2</h1>
+            <h1 class="CMDCorporation">CMD Corporation</h1>
+            <div class="headerButtons">
+                <div><a href="index.php?r=" class="btn btn-primary">Torna Menú Principal</a></div>
+            </div>
         </div>
         <h1 class="titolFormulari">Nou Consell</h1>
         <div class="menuform">

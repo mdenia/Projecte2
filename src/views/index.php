@@ -25,6 +25,12 @@
               <div><a href="index.php?r=createConsell" class="btn btn-primary">Afegir Consell</a></div>
               <div><a href="index.php?r=createAnunci" class="btn btn-primary">Afegir Anunci</a></div>
             </div>
+            <h1 class="CMDCorporation">CMD Corporation</h1>
+            <div class="headerButtons">
+              <div><a href="index.php?r=createEsdeveniment" class="btn btn-primary">Afegir Esdeveniment</a></div>
+              <div><a href="index.php?r=createConsell" class="btn btn-primary">Afegir Consell</a></div>
+              <div><a href="index.php?r=createAnunci" class="btn btn-primary">Afegir Anunci</a></div>
+            </div>
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
