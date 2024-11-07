@@ -15,13 +15,13 @@ try {
 
 $sql->query("
 
-CREATE TABLE IF NOT EXISTS Usuari (ID_Usuari int NOT NULL, Nom varchar(255) NOT NULL, Cognom varchar(255) NOT NULL, Mail varchar(255) NOT NULL, Imatge varchar(255) NOT NULL, PRIMARY KEY (ID_Usuari));
+CREATE TABLE IF NOT EXISTS Usuari (ID_Usuari int NOT NULL, Nom varchar(255) NOT NULL, Cognom varchar(255) NOT NULL, Mail varchar(255) NOT NULL, Password varchar(255) NOT NULL, Imatge varchar(255) NOT NULL, PRIMARY KEY (ID_Usuari));
 
 ");
 
 $sql->query("
 
-CREATE TABLE IF NOT EXISTS Esdeveniment (ID_Esdeveniment int NOT NULL, Títol_Esdeveniment varchar(255) NOT NULL, Imatge varchar(255) NOT NULL, Latitud float NOT NULL, Longitud float NOT NULL, Descripcio_Esdeveniment varchar(255) NOT NULL, Data date NOT NULL, Hora time NOT NULL, Tipus varchar(255) NOT NULL, Num_Visualitzacions int NOT NULL, ID_Usuari int, PRIMARY KEY (ID_Esdeveniment), FOREIGN KEY (ID_Usuari) REFERENCES Usuari(ID_Usuari));
+CREATE TABLE IF NOT EXISTS Esdeveniment (ID_Esdeveniment int NOT NULL, Titol_Esdeveniment varchar(255) NOT NULL, Imatge varchar(255) NOT NULL, Latitud float NOT NULL, Longitud float NOT NULL, Descripcio_Esdeveniment varchar(255) NOT NULL, Data date NOT NULL, Hora time NOT NULL, Tipus varchar(255) NOT NULL, Num_Visualitzacions int NOT NULL, ID_Usuari int, PRIMARY KEY (ID_Esdeveniment), FOREIGN KEY (ID_Usuari) REFERENCES Usuari(ID_Usuari));
 
 "); // DATA (YYYY-MM-DD)
 

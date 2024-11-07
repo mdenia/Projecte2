@@ -1,24 +1,21 @@
 <?php
 
-/**
- * Aquest fitxer és un exemple de Front Controller, pel qual passen totes les requests.
- */
+include "../src/config.php";
 
- include "../src/config.php";
-
-/**
-  * Carreguem les classes del Framework Emeset
-*/
   
- include "../src/Emeset/Container.php";
- include "../src/Emeset/Request.php";
- include "../src/Emeset/Response.php";
- include "../src/ProjectContainer.php";
+include "../src/Emeset/Container.php";
+include "../src/Emeset/Request.php";
+include "../src/Emeset/Response.php";
+include "../src/ProjectContainer.php";
+include "../src/models/Db.php";
+include "../src/models/UserPDO.php";
+include "../src/models/EsdevenimentPDO.php";
+
 
  $request = new \Emeset\Request();
  $response = new \Emeset\Response();
- $container = new \Emeset\Container($config);
- //$container = new ProjectContainer($config);
+ //$container = new \Emeset\Container($config);
+ $container = new ProjectContainer($config);
 
  /* 
   * Aquesta és la part que fa que funcioni el Front Controller.
@@ -50,11 +47,20 @@ elseif($r == "createEsdeveniment") {
 elseif($r == "createAnunci") {
   include "../src/controllers/CreateAnunciController.php";
   $response = createAnunciController($request, $response, $container);
-} 
+}
+
+elseif($r == "LoginUser") {
+  include "../src/controllers/LoginUserController.php";
+  $response = LoginUserController($request, $response, $container);
+}
+
+elseif($r == "User") {
+  include "../src/controllers/FormUserController.php";
+  $response = FormUserController($request, $response, $container);
+}
 
 else {
      echo "No existeix la ruta";
  }
 
- /* Enviem la resposta al client. */
  $response->response();
