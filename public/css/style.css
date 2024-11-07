@@ -3,46 +3,59 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
+
 .header {
     background-color: #2d572c;
-    width: 100%;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
 }
-.carrussel {
+
+.headerButtons {
     display: flex;
-    background-color: #a3d334;
-    justify-content: space-evenly;
-    box-shadow: none;
+    justify-content: center;
 }
-.imatgeCarrussel {
-    width: 200px;
-    margin: 10px;
-    height: auto;
+
+.headerButtons > div {
+    margin: 5px;
+    text-align: center;
+    line-height: 75px;
 }
+
+.CMDCorporation {
+    font-weight: bold;
+}
+
+.cards-wrapper {
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
 .card {
-    align-items: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin: 0 .5em;
+    width: 18rem;
+    margin-left: auto;
+    margin-right: auto;
 }
-.card-body {
-    background-color: #f3f6bd;
-}
+
 .form {
     padding-top: 20px;
     align-items: center;
     text-align: center;
 }
+
 .input, label {
     margin-bottom:20px;
+    font-size: 25px;
 }
 
-.menuform {
+.menuform, .esdeveniment, .Consell, .Anunci {
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #fbda77;
+    width: auto;
     margin-left: 30%;
     margin-right: 30%;
     border-radius: 15px;
@@ -54,14 +67,9 @@ body {
     width: 50%;
     height: 30%;
 }
-.bx-wrapper {
-    border: none;
-    margin: 1%;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
 
-.titolFormulari {
+
+.titolFormulari, .titol {
     text-align: center;
     font-weight: bold;
 }
@@ -71,8 +79,18 @@ body {
     height: 100px;
 }
 
+.imatgeEsdeveniment{
+    width: 10px;
+    height: auto;
+}
+
 @media only screen and (max-width: 600px) {
+
     .titolFormulari {
+        font-size: 70px;
+    }
+    
+    .CMDCorporation {
         font-size: 70px;
     }
 
@@ -92,12 +110,39 @@ body {
         font-size: 50px;
         margin-bottom: 5%;
     }
+
     .input, .textarea {
         margin-top: 3%;
     }
+
     .inputfile{
         margin-top: 3%;
         margin-bottom: 5%;
         font-size: 40px;
+    }
+
+    .cards-wrapper {
+        display: flex;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    .card:not(:first-child) {
+        display: none;
+    }
+
+    .card {
+        width: 60%;
+        align-items: center;
+        font-size: 50px;
+    }
+
+    .card-title {
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    .btn {
+        font-size: 30px;
     }
 }

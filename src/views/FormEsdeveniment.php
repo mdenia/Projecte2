@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Formulari</title>
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="header">
@@ -24,6 +24,11 @@
                 <input class="input" type="time" id="dataEsd" name="horaEsdeveniment" aria-label="Registra l'hora de l'esdeveniment" required><br>
                 <label for="descripcioEsd">Descripció Esdeveniment:</label><br>
                 <textarea class="textarea" id="descripcioEsd" name="descripcioEsdeveniment" placeholder="Descripcio Esdeveniment ..........." required></textarea><br>
+                <label for="categoriaEsd">Categoria Esdeveniment:</label><br>
+                <select class="input" id="categoriaEsd" name="categoriaEsdeveniment" required>
+                    <option value="1">Exterior</option>
+                    <option value="2">Interior</option>
+                </select><br>
                 <input class="input" type="submit" value="Submit" name="Submit">
             </form>
         </div>
