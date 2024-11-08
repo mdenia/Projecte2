@@ -3,8 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <title>Formulari</title>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/custom-bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -29,6 +27,11 @@
                 <input class="input" type="time" id="dataEsd" name="horaEsdeveniment" aria-label="Registra l'hora de l'esdeveniment" required><br>
                 <label for="descripcioEsd">Descripció Esdeveniment:</label><br>
                 <textarea class="textarea" id="descripcioEsd" name="descripcioEsdeveniment" placeholder="Descripcio Esdeveniment ..........." required></textarea><br>
+                <label for="categoriaEsd">Categoria Esdeveniment:</label><br>
+                <select class="input" id="categoriaEsd" name="categoriaEsdeveniment" required>
+                    <option value="1">Exterior</option>
+                    <option value="2">Interior</option>
+                </select><br>
                 <input class="input" type="submit" value="Submit" name="Submit">
             </form>
         </div>
