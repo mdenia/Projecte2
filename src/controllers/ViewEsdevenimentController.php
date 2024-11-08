@@ -1,6 +1,6 @@
 <?php
 
-function createEsdevenimentController($request, $response, $container){
+function ViewEsdevenimentController($request, $response, $container){
 
     $name = $request->get(INPUT_GET, "name");
 

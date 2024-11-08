@@ -1,12 +1,12 @@
 <?php
 
-function createAnunciController($request, $response, $container){
+function ViewRegisterController($request, $response, $container){
 
     $name = $request->get(INPUT_GET, "name");
 
     $response->set("name", $name);
 
-    $response->setTemplate("FormAnunci.php");
+    $response->setTemplate("FormRegister.php");
 
     return $response;
     
