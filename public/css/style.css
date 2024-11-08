@@ -83,6 +83,27 @@ body {
     height: auto;
 }
 
+.carousel-control-prev, .carousel-control-next {
+    width: 75px;
+    margin: 2%;
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+}
+span:hover, span:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.carousel-control-prev, .carousel-control-prev:hover, .carousel-control-prev:focus, .carousel-control-next, .carousel-control-next:hover, .carousel-control-next:focus {
+    color: black;
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+    cursor: default;
+}
 @media only screen and (max-width: 600px) {
 
     .titolFormulari {

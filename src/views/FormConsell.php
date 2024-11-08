@@ -16,7 +16,8 @@
         </div>
         <h1 class="titolFormulari">Nou Consell</h1>
         <div class="menuform">
-            <form class="form">
+            <form class="form" action="index.php" method="post">
+                <input type="hidden" name="r" value="CreateConsell">
                 <label for="TitolCnsll">Titol Consell:</label><br>
                 <input class="input" type="text" id="TitolCnsll" name="TitolConsell" placeholder="Titol" required><br>
                 <label for="DescripcioCnsll">Descripció breu Consell:</label><br>
