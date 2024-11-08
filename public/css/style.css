@@ -46,11 +46,10 @@ body {
     text-align: center;
 }
 
-.input, label {
-    margin-bottom:20px;
+.input, label, .email, input#Contrasenya {
+    margin-bottom:10px;
     font-size: 25px;
 }
-
 .menuform, .esdeveniment, .Consell, .Anunci {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -106,18 +105,18 @@ body {
         height: auto;
     }
 
-    .input, label, .textarea {
+    .input, label, .textarea, .email, .Contrasenya {
         font-size: 50px;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
     }
 
-    .input, .textarea {
+    .input, .textarea, .email {
         margin-top: 3%;
     }
 
     .inputfile{
         margin-top: 3%;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
         font-size: 40px;
     }
 
