@@ -1,9 +1,5 @@
 <?php
 
-/** 
- * Fitxer de configuració de l'aplicació.
- * */ 
-
 $config = [
     "db" => [
         "name" => "Projecte2",
