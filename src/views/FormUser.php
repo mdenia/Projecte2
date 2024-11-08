@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Registrarse</title>
-        <link rel="stylesheet" href="../../public/custom-bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="../../public/css/style.css">
+        <link rel="stylesheet" href="/custom-bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         <div class="header">
@@ -15,7 +15,8 @@
         </div>
         <h1 class="titolFormulari">Nou Usuari</h1>
         <div class="menuform">
-            <form class="form">
+            <form class="form" action="index.php" method="post">
+                <input type="hidden" name="r" value="LoginUser">
                 <label for="Nom">Nom:</label><br>
                 <input class="input" type="text" id="nom" name="Nom" required placeholder="Nom, exemple: 'Paco'"><br>
                 <label for="cognomEsd">Cognom:</label><br>

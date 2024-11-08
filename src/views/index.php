@@ -25,19 +25,13 @@
               <div><a href="index.php?r=createConsell" class="btn btn-primary">Afegir Consell</a></div>
               <div><a href="index.php?r=createAnunci" class="btn btn-primary">Afegir Anunci</a></div>
             </div>
-            <h1 class="CMDCorporation">CMD Corporation</h1>
-            <div class="headerButtons">
-              <div><a href="index.php?r=createEsdeveniment" class="btn btn-primary">Afegir Esdeveniment</a></div>
-              <div><a href="index.php?r=createConsell" class="btn btn-primary">Afegir Consell</a></div>
-              <div><a href="index.php?r=createAnunci" class="btn btn-primary">Afegir Anunci</a></div>
-            </div>
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="cards-wrapper">
                 <div class="card">
-                  <img src="../../public/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                  <img src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title0</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -45,7 +39,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img src="../../public/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                  <img src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title0</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -53,7 +47,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img src="../../public/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                  <img src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title0</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -65,7 +59,7 @@
             <div class="carousel-item">
               <div class="cards-wrapper">
                 <div class="card">
-                  <img src="../../public/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                  <img src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title1</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -73,7 +67,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img src="../../public/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                  <img src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title1</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -81,7 +75,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img src="../../public/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                  <img src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title1</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -93,7 +87,7 @@
             <div class="carousel-item">
               <div class="cards-wrapper">
                 <div class="card">
-                  <img src="../../public/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                  <img src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title2</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -101,7 +95,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img src="../../public/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                  <img src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title2</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -109,7 +103,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img src="../../public/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
+                  <img src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title2</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

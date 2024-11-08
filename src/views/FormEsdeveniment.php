@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Formulari</title>
+        <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
