@@ -5,10 +5,13 @@ use Emeset\Response;
 function LoginUserController($request, $response, $container){
 $pdo=$container->UserPDO();
     $Nom=$request->get(INPUT_POST,"Nom");
-    $Email=$request->get(INPUT_POST,"Email");
+    $Cognom=$request->get(INPUT_POST,"Cognom");
+    $User=$request->get(INPUT_POST,"User");
+    $Mail=$request->get(INPUT_POST,"Email");
     $Password=$request->get(INPUT_POST,"Password");
+    $Imatge=$request->get(INPUT_POST,"Imatge");
 
-$pdo->add($Nom, $Email, $Password);
+$pdo->add($Nom, $Cognom, $User, $Mail, $Password, $Imatge);
 $response->redirect("location:index.php");
 
 return $response;

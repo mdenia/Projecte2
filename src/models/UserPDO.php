@@ -12,11 +12,11 @@ class UserPDO
     }
 
    
-    public function add($Nom, $Email, $Password)
+    public function add($Nom, $Cognom, $User, $Mail, $Password, $Imatge)
     {
-        $query = "insert into Usuari_Prova (Nom, Email, Password) values (:Nom, :Email, :Password)";
+        $query = "insert into Usuari (Nom, Cognom, User, Mail, Password, Imatge) values (:Nom, :Cognom, :User, :Mail, :Password, :Imatge)";
         $stm = $this->sql->prepare($query);
-        $stm->execute([":Nom" => $Nom, ":Email" => $Email, ":Password" => $Password]);
+        $stm->execute([":Nom" => $Nom, ":Cognom" => $Cognom, ":User" => $User, ":Mail" => $Mail, ":Password" => $Password, ":Imatge" => $Imatge,]);
 
         if ($stm->errorCode() !== '00000') {
             $err = $stm->errorInfo();
