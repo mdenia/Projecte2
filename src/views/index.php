@@ -10,6 +10,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
         <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
         <script>
             $(document).ready(function(){
@@ -21,9 +22,9 @@
         <div class="header">
             <h1 class="CMDCorporation">CMD Corporation</h1>
             <div class="headerButtons">
-              <div><a href="index.php?r=createEsdeveniment" class="btn btn-primary">Afegir Esdeveniment</a></div>
-              <div><a href="index.php?r=createConsell" class="btn btn-primary">Afegir Consell</a></div>
-              <div><a href="index.php?r=createAnunci" class="btn btn-primary">Afegir Anunci</a></div>
+              <div><a href="index.php?r=ViewEsdeveniment" class="btn btn-primary">Afegir Esdeveniment</a></div>
+              <div><a href="index.php?r=ViewConsell" class="btn btn-primary">Afegir Consell</a></div>
+              <div><a href="index.php?r=ViewAnunci" class="btn btn-primary">Afegir Anunci</a></div>
             </div>
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -114,10 +115,10 @@
             </div>
           </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="fa fa-arrow-left" aria-hidden="true"></span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="fa fa-arrow-right" aria-hidden="true"></span>
             </a>
         </div>
     </body>
