@@ -34,29 +34,29 @@ include "../src/models/EsdevenimentPDO.php";
   $response = IndexController($request, $response, $container);
  } 
  
- elseif($r == "createConsell") {
-  include "../src/controllers/CreateConsellController.php";
-  $response = createConsellController($request, $response, $container);
+ elseif($r == "ViewConsell") {
+  include "../src/controllers/ViewConsellController.php";
+  $response = ViewConsellController($request, $response, $container);
 } 
 
-elseif($r == "createEsdeveniment") {
-  include "../src/controllers/CreateEsdevenimentController.php";
-  $response = createEsdevenimentController($request, $response, $container);
+elseif($r == "ViewEsdeveniment") {
+  include "../src/controllers/ViewEsdevenimentController.php";
+  $response = ViewEsdevenimentController($request, $response, $container);
 }
 
-elseif($r == "createAnunci") {
-  include "../src/controllers/CreateAnunciController.php";
-  $response = createAnunciController($request, $response, $container);
+elseif($r == "ViewAnunci") {
+  include "../src/controllers/ViewAnunciController.php";
+  $response = ViewAnunciController($request, $response, $container);
 }
 
-elseif($r == "LoginUser") {
-  include "../src/controllers/LoginUserController.php";
-  $response = LoginUserController($request, $response, $container);
+elseif($r == "RegisterUser") {
+  include "../src/controllers/RegisterUserController.php";
+  $response = RegisterUserController($request, $response, $container);
 }
 
 elseif($r == "User") {
-  include "../src/controllers/FormUserController.php";
-  $response = FormUserController($request, $response, $container);
+  include "../src/controllers/ViewRegisterController.php";
+  $response = ViewRegisterController($request, $response, $container);
 }
 
 else {

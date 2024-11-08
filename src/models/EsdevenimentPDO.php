@@ -10,9 +10,9 @@ public function __construct(PDO $sql){
 }   
 
 public function addEsdeveniment($ID_Esdeveniment, $title, $Image, $Latitud, $Longitud, $Description, $Date, $Hour, $Type, $Num_views, $ID_user){
-    $query = "INSERT INTO Esdeveniment (ID_Esdeveniment, Ttol_Esdeveniment, Imatge, Latitud, Longitud, Descripcio_Esdeveniment, Data, Hora, Tipus, Num_Viualitzacions, ID_Usuari) VALUES (:ID_Esdeveniment, :Title, :Image, :Latitud, :Longitud, :Description, :Date, :Hour, :Type, :Num_Views, :ID_User );";
+    $query = "INSERT INTO Esdeveniment (Ttol_Esdeveniment, Imatge, Latitud, Longitud, Descripcio_Esdeveniment, Data, Hora, Tipus, Num_Viualitzacions, ID_Usuari) VALUES (:ID_Esdeveniment, :Title, :Image, :Latitud, :Longitud, :Description, :Date, :Hour, :Type, :Num_Views, :ID_User );";
     $stm = $this->sql->prepare($query);
-    $stm->execute([":ID_Esdeveniment" => $ID_Esdeveniment, ":Title" => $title, "Image" => $Image, "Latitud" => $Latitud, "Longitud" => $Longitud, "Description" => $Description, "Date" => $Date, "Hour" => $Hour, "Type" => $Type, "Num_views" => $Num_views, "ID_user" => $ID_user]);
+    $stm->execute([":Title" => $title, "Image" => $Image, "Latitud" => $Latitud, "Longitud" => $Longitud, "Description" => $Description, "Date" => $Date, "Hour" => $Hour, "Type" => $Type, "Num_views" => $Num_views, "ID_user" => $ID_user]);
 
     if ($stm->errorCode() !== '00000') {
         $err = $stm->errorInfo();

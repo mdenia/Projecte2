@@ -16,7 +16,8 @@
         </div>
         <h1 class="titolFormulari">Nou Anunci</h1>
         <div class="menuform">
-            <form class="form">
+            <form class="form" action="index.php" method="post">
+                <input type="hidden" name="r" value="CreateAnunci">
                 <label for="nomAnunci">Nom Anunci:</label><br>
                 <input class="input" type="text" id="nomAnunci" name="nomAnunci" required placeholder="Nom Anunci"><br>
                 <label for="fileImatge">Imatges de l'Anunci: </label><br>
