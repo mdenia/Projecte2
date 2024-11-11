@@ -23,8 +23,8 @@
                 <input class="input" type="text" id="TitolCnsll" name="TitolConsell" placeholder="Titol" required><br>
                 <label for="DescripcioCnsll">Descripció breu Consell:</label><br>
                 <textarea class="textarea" id="DescripcioCnsll" name="DescripcioConsell" placeholder="Descripcio" required></textarea><br>
-                <label for="file">Text explicatiu</label><br>
-                <input class="input" type="file" id="file" name="file" placeholder="Fitxer.md" required><br>
+                <label for="Text_explicatiu">Text explicatiu</label><br>
+                <textarea class="textarea" id="Text_explicatiu" name="Text_explicatiu" placeholder="Format markdown" required><br>
                 <label for="Hashtags">Hashtags:</label><br>
                 <textarea class="textarea" id="Hashtags" name="Hashtags" require placeholder="Ex: #Sostenible,#Cendrassos,#Figueres.   (Sempre separats per una coma i sense espais entre ells)"></textarea><br>
                 <input class="input" type="submit" value="Submit" name="Submit"></input>
