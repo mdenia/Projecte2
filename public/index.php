@@ -47,7 +47,7 @@ elseif($r == "RegisterUser") {
   $response = RegisterUserController($request, $response, $container);
 }
 
-elseif($r == "User") { // Canviar a ViewRegister
+elseif($r == "ViewRegister") {
   include "../src/controllers/ViewRegisterController.php";
   $response = ViewRegisterController($request, $response, $container);
 }
@@ -55,6 +55,11 @@ elseif($r == "User") { // Canviar a ViewRegister
 elseif($r == "CreateEsdeveniment") {
   include "../src/controllers/AfegirEsdevenimentController.php";
   $response = AfegirEsdevenimentController($request, $response, $container);
+}
+
+elseif($r == "ViewLogin") {
+  include "../src/controllers/ViewLoginController.php";
+  $response = ViewLoginController($request, $response, $container);
 }
 
 else {
