@@ -109,13 +109,6 @@ span:hover, span:focus {
     cursor: default;
 }
 
-.carousel-control-prev, .carousel-control-next {
-    width: 6vh;
-    height: 6vh;
-    border-radius: 50%;
-    top: 30%;
-}
-
     .Login {
     display: block;
     float: right;
@@ -189,5 +182,13 @@ span:hover, span:focus {
     }
     .Login {
         left: 90%;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 75px;
+        margin: 2%;
+        text-decoration: none;
+        color: black;
+        font-size: 100px;
     }
 }
