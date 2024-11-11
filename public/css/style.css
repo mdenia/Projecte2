@@ -109,14 +109,26 @@ span:hover, span:focus {
     cursor: default;
 }
 
-    .Login {
+.Login {
     display: block;
+    cursor: pointer;
     float: right;
     width: 75px;
     height: 75px;
     position: absolute;
     left: 92%;
     top: 6%;
+}
+
+.ViewRegister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NoUser {
+    margin-top: 20px;
+    margin-right: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -190,5 +202,18 @@ span:hover, span:focus {
         text-decoration: none;
         color: black;
         font-size: 100px;
+    }
+
+    .NoUser {
+        margin-top: 40px;
+        margin-right: 10px;
+    }
+
+    .ViewRegister {
+        font-size: 50px;
+    }
+
+    .btn {
+        font-size: 50px;
     }
 }
