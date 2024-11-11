@@ -59,6 +59,11 @@ elseif($r == "User") {
   $response = ViewRegisterController($request, $response, $container);
 }
 
+elseif($r == "CreateEsdeveniment") {
+  include "../src/controllers/AfegirEsdevenimentController.php";
+  $response = AfegirEsdevenimentController($request, $response, $container);
+}
+
 else {
      echo "No existeix la ruta";
  }
