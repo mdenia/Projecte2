@@ -16,7 +16,7 @@
         </div>
         <h1 class="titolFormulari">Nou Esdeveniment</h1>
         <div class="menuform">
-            <form class="form" action="index.php" method="post">
+            <form class="form" action="index.php" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="r" value="CreateEsdeveniment">
                 <label for="nomEsdeveniment">Nom Esdeveniment:</label><br>
                 <input class="input" type="text" id="nomEsd" name="nomEsdeveniment" required placeholder="Nom Esdeveniment"><br>
