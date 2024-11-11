@@ -13,6 +13,7 @@
             <div class="headerButtons">
                 <div><a href="index.php?r=" class="btn btn-primary">Torna Menú Principal</a></div>
             </div>
+            <img src="../../public/Imatges_BDD/usuari.png" alt="Login" class="Login">
         </div>
         <h1 class="titolFormulari">Nou Anunci</h1>
         <div class="menuform">
