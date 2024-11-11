@@ -23,7 +23,7 @@
                 <label for="ubicacioEsd">Ubicació Esdeveniment:</label><br>
                 <input class="input" type="number" id="ubicacioEsd" name="Latitud" required placeholder="Latitud"><br>
                 <input class="input" type="number" id="ubicacioEsd" name="Longitud" required placeholder="Longitud"><br>
-                <label for="fileImatge">Imatges de l'Esdeveniment</label><br>
+                <label for="fileImage">Imatges de l'Esdeveniment</label><br>
                 <input class="input" type="file" id="fileImatge" name="fileImage[]" aria-label="Fitxer de la imatge" multiple required><br>
                 <label for="dataEsd">Data i Hora Esdeveniment:</label><br>
                 <input class="input" type="date" id="dataEsd" name="dataEsdeveniment" aria-label="Reistra dia/mes/any de l'esdeveniment" required>
