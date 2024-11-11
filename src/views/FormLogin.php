@@ -15,7 +15,7 @@
         </div>
         <h1 class="titolFormulari">Login</h1>
         <div class="menuform">
-        <form class="form" action="index.php" method="post">
+            <form class="form" action="index.php" method="post">
                 <input type="hidden" name="r" value="LoginUser">
                 <label for="Usuari">Usuari</label><br>
                 <input class="input" id="Usuari" name="Usuari" placeholder="Nom d'Usuari" required><br>
@@ -23,6 +23,9 @@
                 <input type="password" class="Contrasenya" id="Contrasenya" name="Contrasenya" required placeholder="∗∗∗∗∗∗∗∗∗∗∗∗∗"><br>
                 <input class="input" type="submit" value="Submit" name="Submit">
             </form>
+        </div>
+        <div class="ViewRegister">
+            <p class="NoUser">No tens usuari?</p><a href="index.php?r=ViewRegister" class="btn btn-primary">Registra't</a>
         </div>
     </body>
 </html> 
