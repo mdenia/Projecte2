@@ -20,6 +20,7 @@ public function addEsdeveniment($Title, $Image, $Latitud, $Longitud, $Descriptio
     }
 }
 /*
+/*
 public function updateEsdeveniment($id, $title, $url, $description){
         $query = "update links set title = :title, url = :url, description = :description where id = :id;";
         $stm = $this->sql->prepare($query);
