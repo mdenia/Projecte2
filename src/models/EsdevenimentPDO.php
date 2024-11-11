@@ -9,18 +9,18 @@ public function __construct(PDO $sql){
     $this->sql = $sql;
 }   
 
-public function addEsdeveniment($ID_Esdeveniment, $title, $Image, $Latitud, $Longitud, $Description, $Date, $Hour, $Type, $Num_views, $ID_user){
-    $query = "INSERT INTO Esdeveniment (Ttol_Esdeveniment, Imatge, Latitud, Longitud, Descripcio_Esdeveniment, Data, Hora, Tipus, Num_Viualitzacions, ID_Usuari) VALUES (:ID_Esdeveniment, :Title, :Image, :Latitud, :Longitud, :Description, :Date, :Hour, :Type, :Num_Views, :ID_User );";
+public function addEsdeveniment($Title, $Image, $Latitud, $Longitud, $Description, $Date, $Hour, $Type, $Num_views, $ID_User){
+    $query = "insert into Esdeveniment (Titol_Esdeveniment, Imatge, Latitud, Longitud, Descripcio_Esdeveniment, Data, Hora, Tipus, Num_Visualitzacions, ID_Usuari) VALUES (:Title, :Image, :Latitud, :Longitud, :Description, :Date, :Hour, :Type, :Num_Views, :ID_User );";
     $stm = $this->sql->prepare($query);
-    $stm->execute([":Title" => $title, "Image" => $Image, "Latitud" => $Latitud, "Longitud" => $Longitud, "Description" => $Description, "Date" => $Date, "Hour" => $Hour, "Type" => $Type, "Num_views" => $Num_views, "ID_user" => $ID_user]);
+    $stm->execute([":Title" => $Title, ":Image" => $Image, ":Latitud" => $Latitud, ":Longitud" => $Longitud, ":Description" => $Description, ":Date" => $Date, ":Hour" => $Hour, ":Type" => $Type, ":Num_Views" => $Num_views, ":ID_User" => $ID_User]);
 
     if ($stm->errorCode() !== '00000') {
         $err = $stm->errorInfo();
-        $code = $stm->errorCode();
         die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
     }
 }
-
+/*
+/*
 public function updateEsdeveniment($id, $title, $url, $description){
         $query = "update links set title = :title, url = :url, description = :description where id = :id;";
         $stm = $this->sql->prepare($query);
@@ -53,4 +53,5 @@ public function deleteEsdeveniment($ID_Esdeveniment){
         $stm = $this->sql->prepare($query);
         $stm->execute([":ID_Esdeveniment" => $ID_Esdeveniment]);
     }
+*/
 }
