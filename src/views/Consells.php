@@ -14,16 +14,20 @@
     </head>
     <body>
         <div class="header">
-            <h1>Projecte 2</h1>
+            <h1 class="CMDCorporation">CMD Corporation</h1>
+            <div class="headerButtons">
+                <div><a href="index.php?r=" class="btn btn-primary">Torna Menú Principal</a></div>
+            </div>
+            <img src="../../public/Imatges_BDD/usuari.png" alt="Login" class="Login">
         </div>
         <div class="titol">
             <h1>Consell</h1>
         </div>
         <div class="Consell">
-          <div class="textConsell">
-            <h2>Consell 1</h2>
-            <p>Descripció de l'Consell 1</p>
-          </div>
+            <div class="textConsell">
+                <h2>Consell 1</h2>
+                <p>Descripció de l'Consell 1</p>
+            </div>
         </div>
     </body>
 </html>
