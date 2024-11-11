@@ -14,7 +14,11 @@
     </head>
     <body>
         <div class="header">
-            <h1>Projecte 2</h1>
+            <h1 class="CMDCorporation">CMD Corporation</h1>
+            <div class="headerButtons">
+                <div><a href="index.php?r=" class="btn btn-primary">Torna Menú Principal</a></div>
+            </div>
+            <img src="../../public/Imatges_BDD/usuari.png" alt="Login" class="Login">
         </div>
         <div class="titol">
             <h1>Anuncis</h1>
