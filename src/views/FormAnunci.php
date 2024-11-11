@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Formulari Consell</title>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/custom-bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -13,7 +13,7 @@
             <div class="headerButtons">
                 <div><a href="index.php?r=" class="btn btn-primary">Torna Menú Principal</a></div>
             </div>
-            <img src="../../public/Imatges_BDD/usuari.png" alt="Login" class="Login">
+            <img src="Imatges_BDD/usuari.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
         </div>
         <h1 class="titolFormulari">Nou Anunci</h1>
         <div class="menuform">
