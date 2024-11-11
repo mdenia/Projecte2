@@ -1,5 +1,7 @@
 <?php
 
+use Emeset\Response;
+
 include "../src/config.php";
 
   
@@ -57,6 +59,11 @@ elseif($r == "RegisterUser") {
 elseif($r == "User") { // Canviar a ViewRegister
   include "../src/controllers/ViewRegisterController.php";
   $response = ViewRegisterController($request, $response, $container);
+}
+
+elseif($r == "CreateEsdeveniment") {
+  include"../src/controllers/AfegirEsdevenimentController.php";
+  $response = AfegirEsdevenimentController($request, $response, $container);
 }
 
 else {
