@@ -108,7 +108,9 @@ span:hover, span:focus {
     opacity: 0.9;
     cursor: default;
 }
-
+.left {
+    margin-left: 10px;
+}
 .Login {
     display: block;
     cursor: pointer;

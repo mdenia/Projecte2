@@ -9,10 +9,11 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
-        <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../../public/custom-bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../../public/css/style.css">
     </head>
     <body>
+        
         <div class="header">
             <h1 class="CMDCorporation">CMD Corporation</h1>
             <div class="headerButtons">
@@ -25,8 +26,10 @@
         </div>
         <div class="Consell">
             <div class="textConsell">
-                <h2>Consell 1</h2>
-                <p>Descripció de l'Consell 1</p>
+                <h2 class="left"><?=$consell[1]?></h2>
+                <p class="left"><?=$consell[2]?></p>
+                <p class="left"><?=$consell[3]?></p>
+                <p class="left"><?=$consell[4]?></p>
             </div>
         </div>
     </body>

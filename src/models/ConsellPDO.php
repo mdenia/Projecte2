@@ -21,4 +21,17 @@ class ConsellPDO
             die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
         }
     }
+    public function listConsell(){
+        $query = "select ID_Consell, Titol_Consell, Descripcio_Consell, Text_Explicatiu, Hashtags from Consell;";
+        $Consell = [];
+        foreach ($this->sql->query($query, \PDO::FETCH_ASSOC) as $url) {
+            $Consell[$url["ID_Consell"]] = $url;
+        }
+        if ($this->sql->errorCode() !== '00000') {
+            $err = $this->sql->errorInfo();
+            $code = $this->sql->errorCode();
+            die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
+        }
+        return $Consell;    
+    }
 }
