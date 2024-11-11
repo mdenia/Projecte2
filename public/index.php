@@ -54,7 +54,7 @@ elseif($r == "RegisterUser") {
   $response = RegisterUserController($request, $response, $container);
 }
 
-elseif($r == "User") {
+elseif($r == "User") { // Canviar a ViewRegister
   include "../src/controllers/ViewRegisterController.php";
   $response = ViewRegisterController($request, $response, $container);
 }
