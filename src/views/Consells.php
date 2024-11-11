@@ -18,7 +18,7 @@
             <div class="headerButtons">
                 <div><a href="index.php?r=" class="btn btn-primary">Torna Menú Principal</a></div>
             </div>
-            <img src="../../public/Imatges_BDD/usuari.png" alt="Login" class="Login">
+            <img src="Imatges_BDD/usuari.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
         </div>
         <div class="titol">
             <h1>Consell</h1>
