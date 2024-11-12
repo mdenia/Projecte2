@@ -115,10 +115,10 @@
               </div>
             </div>
           </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev" aria-label="Carrousel Previ">
               <span class="fa fa-arrow-left" aria-hidden="true"></span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next" aria-label="Carrousel Seguent">
               <span class="fa fa-arrow-right" aria-hidden="true"></span>
             </a>
         </div>

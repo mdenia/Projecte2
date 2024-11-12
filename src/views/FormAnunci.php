@@ -24,7 +24,7 @@
                 <label for="fileImatge">Imatges de l'Anunci: </label><br>
                 <input class="input" type="file" id="fileImatge" name="fileImatge" aria-label="Fitxer de la imatge" multiple required><br>
                 <label for="CategoriaAnunci">Categoria De l'Anunci:</label>
-                <select name="Categoria" id="Categoria">
+                <select name="Categoria" id="Categoria" aria-label="Categoria De l'Anunci">
                     <option value="Categoria1">Categoria1</option>
                     <option value="Categoria2">Categoria2</option>
                     <option value="Categoria3">Categoria3</option>

@@ -21,13 +21,24 @@
             <img src="Imatges_BDD/usuari.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
         </div>
         <div class="titol">
-            <h1>Consell</h1>
+            <h1>Consells</h1>
         </div>
+        <?php
+        require_once '../../src/model/ConsellPDO.php';
+        $consellPDO = new ConsellPDO($Consell);
+        $consell = $consellPDO->listConsell();
+        foreach ($consells as $consell) {
+        ?>
         <div class="Consell">
             <div class="textConsell">
-                <h2>Consell 1</h2>
-                <p>Descripció de l'Consell 1</p>
+                <h2 class="left"><?=$consell[1]?></h2>
+                <p class="left"><?=$consell[2]?></p>
+                <p class="left"><?=$consell[3]?></p>
+                <p class="left"><?=$consell[4]?></p>
             </div>
         </div>
+        <?php
+        }
+        ?>
     </body>
 </html>
