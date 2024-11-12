@@ -11,6 +11,7 @@ include "../src/ProjectContainer.php";
 include "../src/models/Db.php";
 include "../src/models/UserPDO.php";
 include "../src/models/EsdevenimentPDO.php";
+include "../src/middleware/Auth.php";
 
  $request = new \Emeset\Request();
  $response = new \Emeset\Response();
@@ -65,6 +66,16 @@ elseif($r == "ViewLogin") {
 elseif($r == "LoginUser") {
   include "../src/controllers/LoginUserController.php";
   $response = LoginUserController($request, $response, $container);
+}
+
+elseif($r == "LogoutUser") {
+  include "../src/controllers/LogoutUserController.php";
+  $response = LogoutUserController($request, $response, $container);
+}
+
+elseif($r == "ViewUser") {
+  include "../src/controllers/ViewUserController.php";
+  $response = auth($request, $response, $container, 'ViewUserController');
 }
 
 else {

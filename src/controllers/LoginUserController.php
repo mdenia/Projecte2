@@ -2,12 +2,12 @@
 
 function LoginUserController($request, $response, $container) {
 
-    $Users = $container->users();
+    $Users = $container->UserPDO();
 
     $User = $request->get(INPUT_POST, "User");
     $Password = $request->get(INPUT_POST, "Password");
 
-    $currentUser = $Users->getByUser($User, $Password);
+    $currentUser = $Users->login($User, $Password);
 
     if($currentUser) {
 
@@ -15,7 +15,7 @@ function LoginUserController($request, $response, $container) {
         $response->setSession("loginOk", true);
         $response->redirect("location: index.php");
     } else {
-        $response->redirect("location: index.php?r=login&error=1"); //Hacer un isset(Get["error"])
+        $response->redirect("location: index.php?r=ViewLogin&error=1");
     }
     return $response;
 }

@@ -25,17 +25,17 @@ class UserPDO
     }
 
     public function login($User, $Password) {
-        $query = "select";
+        $query = "select ID_Usuari, Nom, Cognom, User, Mail, Password, Imatge from Usuari where User = :User";
         $stm = $this->sql->prepare($query);
-        $stm->execute([$User]);
+        $stm->execute([":User" =>$User]);
         $result = $stm->fetch();
         if(!$result) {
             return false;
         }
 
-        $hash = $result['password'];
+        $hash = $result['Password'];
 
-        if (password_verify($Password, $hash)) { // Comprovar contrasenya
+        if (password_verify($Password, $hash)) { // Comprovar password
                     return $result;
                  } else {
                  return false;

@@ -12,9 +12,14 @@
             <div class="headerButtons">
                 <div><a href="index.php?r=" class="btn btn-primary">Torna Menú Principal</a></div>
             </div>
-            <?php if(isset($_GET['error'])) { ?> <div class="Error">
-              <p class="ErrorP">Usuari i/o Contrassenya Incorrectes</p>
-            </div> <?php }?>
+            <?php 
+            if(isset($_GET['error'])) { 
+                if($_GET['error'] == 1) {
+                    
+            echo "<div class='Error'>Usuari i/o Contrassenya Incorrectes</div>";
+            }
+        }
+            ?>
             
         </div>
         <h1 class="titolFormulari">Login</h1>

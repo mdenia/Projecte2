@@ -4,7 +4,7 @@ function LogoutUserController($request, $response, $container){
 
 session_destroy();
 
-$response->setTemplate("FromLogin.php");
+$response->setTemplate("index.php");
 
 return $response;
 

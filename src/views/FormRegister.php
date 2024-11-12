@@ -15,7 +15,7 @@
         </div>
         <h1 class="titolFormulari">Register</h1>
         <div class="menuform">
-            <form class="form" action="index.php" method="post">
+            <form class="form" action="index.php" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="r" value="RegisterUser">
                 <label for="Nom">Nom:</label><br>
                 <input class="input" type="text" id="nom" name="Nom" required placeholder="Nom, exemple: 'Paco'"><br>
@@ -27,8 +27,8 @@
                 <input class="email" type="email" id="email" name="Mail" require placeholder="p.....3@gmail.com"><br>
                 <label for="Password">Contrasenya</label><br>
                 <input type="password" class="Contrasenya" id="Contrasenya" name="Password" required placeholder="∗∗∗∗∗∗∗∗∗∗∗∗∗"><br>
-                <label for="Imatge">Imatge de perfil</label><br>
-                <input class="input" type="file" id="fileImatge" name="Imatge" aria-label="Fitxer de la imatge" required><br>
+                <label for="Image">Imatge de perfil</label><br>
+                <input class="input" type="file" id="fileImatge" name="Image[]" aria-label="Fitxer de la imatge" required><br>
                 <input class="input" type="submit" value="Submit" name="Submit">
             </form>
         </div>
