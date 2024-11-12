@@ -23,14 +23,17 @@
     <div class="titol">
       <h1>Esdeveniments</h1>
     </div>
+    <?php foreach($Event as $Events) { ?>
     <div class="esdeveniment">
-      <div class="imatgeEsdeveniment">
-        <img src="../../public/Imatges_Index/Pou_Brasil.jpg" alt="Imatge Esdeveniment">
-      </div>
       <div class="textEsdeveniment">
-          <h2>Esdeveniment 1</h2>
-          <p>Descripció de l'esdeveniment 1</p>
+        <h2 class="left"><?=$Events['Titol_Esdeveniment']?></h2>
+        <p class="left"><?=$Events["<img src='Imatge'>"]?></p>
+        <p class="left"><?=$Events['Descripcio_Esdeveniment']?></p>
+        <p class="left"><?=$Events['Data']?></p>
+        <p class="left"><?=$Events['Hora']?></p>
+        <p class="left"><?=$Events['Tipus']?></p>
       </div>
     </div>
+    <?php } ?>
   </body>
 </html>

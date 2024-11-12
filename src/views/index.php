@@ -22,9 +22,12 @@
         <div class="header">
             <h1 class="CMDCorporation">CMD Corporation</h1>
             <div class="headerButtons">
-              <div><a href="index.php?r=ViewEsdeveniment" class="btn btn-primary">Afegir Esdeveniment</a></div>
-              <div><a href="index.php?r=ViewConsell" class="btn btn-primary">Afegir Consell</a></div>
-              <div><a href="index.php?r=ViewAnunci" class="btn btn-primary">Afegir Anunci</a></div>
+              <div><a href="index.php?r=FormEsdeveniment" class="btn btn-primary">Afegir Esdeveniment</a></div>
+              <div><a href="index.php?r=FormConsell" class="btn btn-primary">Afegir Consell</a></div>
+              <div><a href="index.php?r=FormAnunci" class="btn btn-primary">Afegir Anunci</a></div>
+              <div><a href="index.php?r=ViewEsdeveniment" class="btn btn-warning">Tots Els Esdeveniments</a></div>
+              <div><a href="index.php?r=ViewConsell" class="btn btn-warning">Tots Els Consells</a></div>
+              <div><a href="index.php?r=ViewAnunci" class="btn btn-warning">Tots Els Anuncis</a></div>
             </div>
             <img src="Imatges_BDD/usuari.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewUser'">
         </div>

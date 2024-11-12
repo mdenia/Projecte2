@@ -6,7 +6,7 @@ function ViewAnunciController($request, $response, $container){
 
     $response->set("name", $name);
 
-    $response->setTemplate("FormAnunci.php");
+    $response->setTemplate("Anuncis.php");
 
     return $response;
     
