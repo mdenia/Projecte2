@@ -19,7 +19,7 @@
                 <input type="hidden" name="r" value="RegisterUser">
                 <label for="Nom">Nom:</label><br>
                 <input class="input" type="text" id="nom" name="Nom" required placeholder="Nom, exemple: 'Paco'" aria-label="Nom"><br>
-                <label for="cognomEsd">Cognom:</label><br>
+                <label for="cognom">Cognom:</label><br>
                 <input class="input" type="text" id="cognom" name="Cognom" required placeholder="Cognom, exemple: 'Garcia'" aria-label="Cognom"><br>
                 <label for="Usuari">Usuari</label><br>
                 <input class="input" id="usuari" name="User" placeholder="Nom d'Usuari" required aria-label="User"><br>
