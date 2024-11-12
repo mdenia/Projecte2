@@ -23,18 +23,15 @@
         <div class="titol">
             <h1>Consells</h1>
         </div>
-        <?php
-        require_once '../../src/model/ConsellPDO.php';
-        $consellPDO = new ConsellPDO($Consell);
-        $consell = $consellPDO->listConsell();
+        <?php        
         foreach ($consells as $consell) {
         ?>
         <div class="Consell">
             <div class="textConsell">
-                <h2 class="left"><?=$consell[1]?></h2>
-                <p class="left"><?=$consell[2]?></p>
-                <p class="left"><?=$consell[3]?></p>
-                <p class="left"><?=$consell[4]?></p>
+                <h2 class="left"><?=$consell["Titol_Consell"]?></h2>
+                <p class="left"><?=$consell["Descripcio_Consell"]?></p>
+                <p class="left"><?=$consell["Text_Explicatiu"]?></p>
+                <p class="left"><?=$consell["Hashtags"]?></p>
             </div>
         </div>
         <?php
