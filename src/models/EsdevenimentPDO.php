@@ -19,6 +19,21 @@ public function addEsdeveniment($Title, $Image, $Latitud, $Longitud, $Descriptio
         die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
     }
 }
+
+public function listEsdeveniment(){
+    $query = "select ID_Esdeveniment, Titol_Esdeveniment, Imatge, Latitud, Longitud, Descripcio_Esdeveniment, Data, Hora, Tipus from Esdeveniment";
+    $Esdeveniment = [];
+    foreach ($this->sql->query($query, \PDO::FETCH_ASSOC) as $Esd) {
+        $Esdeveniment[$Esd["ID_Esdeveniment"]] = $Esd;
+    }
+
+    if ($this->sql->errorCode() !== '00000') {
+        $err = $this->sql->errorInfo();
+        $code = $this->sql->errorCode();
+        die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
+    }
+    return $Esdeveniment;
+}
 /*
 /*
 public function updateEsdeveniment($id, $title, $url, $description){
@@ -31,21 +46,6 @@ public function updateEsdeveniment($id, $title, $url, $description){
             $code = $stm->errorCode();
             die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
         }
-}
-
-public function listEsdeveniment(){
-        $query = "select ID_Esdeveniment, Ttol_Esdeveniment, Imatge, Latitud, Longitud, Descripcio_Esdeveniment, Data, Hora, Tipus, Num_Visualitzacions from Esdeveniment;";
-        $Esdeveniment = [];
-        foreach ($this->sql->query($query, \PDO::FETCH_ASSOC) as $url) {
-            $Esdeveniment[$url["ID_Esdeveniment"]] = $url;
-        }
-
-        if ($this->sql->errorCode() !== '00000') {
-            $err = $this->sql->errorInfo();
-            $code = $this->sql->errorCode();
-            die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
-        }
-        return $Esdeveniment;
 }
 
 public function deleteEsdeveniment($ID_Esdeveniment){

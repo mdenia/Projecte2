@@ -78,6 +78,21 @@ elseif($r == "ViewUser") {
   $response = auth($request, $response, $container, 'ViewUserController');
 }
 
+elseif($r == "FormEsdeveniment") {
+  include "../src/controllers/FormEsdevenimentController.php";
+  $response = FormEsdevenimentController($request, $response, $container);
+}
+
+elseif($r == "FormConsell") {
+  include "../src/controllers/FormConsellController.php";
+  $response = FormConsellController($request, $response, $container);
+}
+
+elseif($r == "FormAnunci") {
+  include "../src/controllers/FormAnunciController.php";
+  $response = FormAnunciController($request, $response, $container);
+}
+
 else {
      echo "No existeix la ruta";
  }
