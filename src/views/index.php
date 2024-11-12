@@ -26,7 +26,7 @@
               <div><a href="index.php?r=ViewConsell" class="btn btn-primary">Afegir Consell</a></div>
               <div><a href="index.php?r=ViewAnunci" class="btn btn-primary">Afegir Anunci</a></div>
             </div>
-            <img src="Imatges_BDD/usuari.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
+            <img src="Imatges_BDD/usuari.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewUser'">
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
