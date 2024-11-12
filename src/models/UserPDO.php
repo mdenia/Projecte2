@@ -24,13 +24,21 @@ class UserPDO
         }
     }
 
-    // public function login() {
-        
-    //     if (nombrefuncion(password que introduce user, password bdd)) { // Comprovar contrasenya
-    //         return true;
-    //     } else {
-    //     return false
-    //     }
-    // }
+    public function login($User, $Password) {
+        $query = "select";
+        $stm = $this->sql->prepare($query);
+        $stm->execute([$User]);
+        $result = $stm->fetch();
+        if(!$result) {
+            return false;
+        }
 
+        $hash = $result['password'];
+
+        if (password_verify($Password, $hash)) { // Comprovar contrasenya
+                    return $result;
+                 } else {
+                 return false;
+                 }
+    }
 }

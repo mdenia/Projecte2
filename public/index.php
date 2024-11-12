@@ -62,6 +62,11 @@ elseif($r == "ViewLogin") {
   $response = ViewLoginController($request, $response, $container);
 }
 
+elseif($r == "LoginUser") {
+  include "../src/controllers/LoginUserController.php";
+  $response = LoginUserController($request, $response, $container);
+}
+
 else {
      echo "No existeix la ruta";
  }

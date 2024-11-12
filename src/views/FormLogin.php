@@ -12,15 +12,19 @@
             <div class="headerButtons">
                 <div><a href="index.php?r=" class="btn btn-primary">Torna Menú Principal</a></div>
             </div>
+            <?php if(isset($_GET['error'])) { ?> <div class="Error">
+              <p class="ErrorP">Usuari i/o Contrassenya Incorrectes</p>
+            </div> <?php }?>
+            
         </div>
         <h1 class="titolFormulari">Login</h1>
         <div class="menuform">
             <form class="form" action="index.php" method="post">
                 <input type="hidden" name="r" value="LoginUser">
                 <label for="Usuari">Usuari</label><br>
-                <input class="input" id="Usuari" name="Usuari" placeholder="Nom d'Usuari" required><br>
+                <input class="input" id="Usuari" name="User" placeholder="Nom d'Usuari" required><br>
                 <label for="Contrasenya">Contrasenya</label><br>
-                <input type="password" class="Contrasenya" id="Contrasenya" name="Contrasenya" required placeholder="∗∗∗∗∗∗∗∗∗∗∗∗∗"><br>
+                <input type="password" class="Contrasenya" id="Contrasenya" name="Password" required placeholder="∗∗∗∗∗∗∗∗∗∗∗∗∗"><br>
                 <input class="input" type="submit" value="Submit" name="Submit">
             </form>
         </div>
