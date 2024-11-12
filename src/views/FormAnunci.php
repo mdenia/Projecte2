@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <title>Formulari Consell</title>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../../public/custom-bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../../public/css/style.css">
     </head>
     <body>
         <div class="header">
@@ -24,7 +24,7 @@
                 <label for="fileImatge">Imatges de l'Anunci: </label><br>
                 <input class="input" type="file" id="fileImatge" name="fileImatge" aria-label="Fitxer de la imatge" multiple required><br>
                 <label for="CategoriaAnunci">Categoria De l'Anunci:</label>
-                <select name="Categoria" id="Categoria">
+                <select name="Categoria" id="Categoria" aria-label="Categoria De l'Anunci">
                     <option value="Categoria1">Categoria1</option>
                     <option value="Categoria2">Categoria2</option>
                     <option value="Categoria3">Categoria3</option>
