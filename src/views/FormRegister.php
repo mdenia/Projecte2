@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Register</title>
-        <link rel="stylesheet" href="../../public/custom-bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="../../public/css/style.css">
+        <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="header">
