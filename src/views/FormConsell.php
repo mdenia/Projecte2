@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <title>Formulari Consell</title>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../../public/custom-bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../../public/css/style.css">
     </head>
     <body>
         <div class="header">
@@ -24,7 +24,7 @@
                 <label for="DescripcioCnsll">Descripció breu Consell:</label><br>
                 <textarea class="textarea" id="DescripcioCnsll" name="DescripcioConsell" placeholder="Descripcio" required></textarea><br>
                 <label for="Text_explicatiu">Text explicatiu</label><br>
-                <textarea class="textarea" id="Text_explicatiu" name="Text_explicatiu" placeholder="Format markdown" required><br>
+                <textarea class="textarea" id="Text_explicatiu" name="Text_explicatiu" placeholder="Format markdown" required></textarea><br>
                 <label for="Hashtags">Hashtags:</label><br>
                 <textarea class="textarea" id="Hashtags" name="Hashtags" require placeholder="Ex: #Sostenible,#Cendrassos,#Figueres.   (Sempre separats per una coma i sense espais entre ells)"></textarea><br>
                 <input class="input" type="submit" value="Submit" name="Submit"></input>

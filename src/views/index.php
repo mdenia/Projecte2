@@ -9,9 +9,9 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
-        <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../../public/custom-bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../../public/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../public/css/style.css">
         <script>
             $(document).ready(function(){
               $(".slider").bxSlider();
@@ -115,10 +115,10 @@
               </div>
             </div>
           </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev" aria-label="Carrousel Previ">
               <span class="fa fa-arrow-left" aria-hidden="true"></span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next" aria-label="Carrousel Seguent">
               <span class="fa fa-arrow-right" aria-hidden="true"></span>
             </a>
         </div>
