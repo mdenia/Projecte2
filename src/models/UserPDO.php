@@ -45,8 +45,8 @@ class UserPDO
     public function listUser(){
         $query = "select ID_Usuari, Nom, Cognom, User, Mail, Password, Imatge from Usuari";
         $User = [];
-        foreach ($this->sql->query($query, \PDO::FETCH_ASSOC) as $Esd) {
-            $User[$Esd["ID_Esdeveniment"]] = $Esd;
+        foreach ($this->sql->query($query, \PDO::FETCH_ASSOC) as $Usr) {
+            $User[$Usr["ID_Usuari"]] = $Usr;
         }
     
         if ($this->sql->errorCode() !== '00000') {
