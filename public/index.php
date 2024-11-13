@@ -98,6 +98,16 @@ elseif($r == "ViewLocation") {
   $response = ViewLocationController($request, $response, $container);
 }
 
+elseif($r == "CreateConsell") {
+  include "../src/controllers/AfegirConsellController.php";
+  $response = AfegirConsellController($request, $response, $container);
+}
+
+elseif($r == "CreateAnunci") {
+  include "../src/controllers/AfegirAnunciController.php";
+  $response = AfegirAnunciController($request, $response, $container);
+}
+
 else {
      echo "No existeix la ruta";
  }
