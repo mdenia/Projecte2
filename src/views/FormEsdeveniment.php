@@ -5,7 +5,7 @@
         <title>Formulari</title>
         <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
-        <script src="../../src/Functions.js"></script>
+        <script src="../src/Functions.js"></script>
     </head>
     <body>
         <div class="header">
