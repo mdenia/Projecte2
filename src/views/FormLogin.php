@@ -5,6 +5,7 @@
         <title>LogIn</title>
         <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="../src/Functions.js"></script>
     </head>
     <body>
         <div class="header">
@@ -24,7 +25,7 @@
         </div>
         <h1 class="titolFormulari">Login</h1>
         <div class="menuform">
-            <form class="form" action="index.php" method="post">
+            <form class="form" action="index.php" method="post" onsubmit="validateLogin()">
                 <input type="hidden" name="r" value="LoginUser">
                 <label for="Usuari">Usuari</label><br>
                 <input class="input" id="Usuari" name="User" placeholder="Nom d'Usuari" required><br>

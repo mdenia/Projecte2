@@ -6,6 +6,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="../src/Functions.js"></script>
     </head>
     <body>
         <div class="header">
@@ -17,7 +18,7 @@
         </div>
         <h1 class="titolFormulari">Nou Consell</h1>
         <div class="menuform">
-            <form class="form" action="index.php" method="post">
+            <form class="form" action="index.php" method="post" onsubmit="validateCnsll()">
                 <input type="hidden" name="r" value="CreateConsell">
                 <label for="TitolCnsll">Titol Consell:</label><br>
                 <input class="input" type="text" id="TitolCnsll" name="TitolConsell" placeholder="Titol" required><br>
