@@ -5,6 +5,7 @@
         <title>Formulari</title>
         <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="../src/Functions.js"></script>
     </head>
     <body>
         <div class="header">
@@ -16,7 +17,7 @@
         </div>
         <h1 class="titolFormulari">Nou Esdeveniment</h1>
         <div class="menuform">
-            <form class="form" action="index.php" method="post" enctype="multipart/form-data">
+            <form class="form" action="index.php" method="post" enctype="multipart/form-data" onsubmit="validateEsd()">
                 <input type="hidden" name="r" value="CreateEsdeveniment">
                 <label for="nomEsd">Nom Esdeveniment:</label><br>
                 <input class="input" type="text" id="nomEsd" name="nomEsdeveniment" required placeholder="Nom Esdeveniment"><br>

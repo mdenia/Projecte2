@@ -5,6 +5,7 @@
         <title>Register</title>
         <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="../src/Functions.js"></script>
     </head>
     <body>
         <div class="header">
@@ -15,7 +16,7 @@
         </div>
         <h1 class="titolFormulari">Register</h1>
         <div class="menuform">
-            <form class="form" action="index.php" method="post" enctype="multipart/form-data">
+            <form class="form" action="index.php" method="post" enctype="multipart/form-data" onsubmit="validateUser()">
                 <input type="hidden" name="r" value="RegisterUser">
                 <label for="Nom">Nom:</label><br>
                 <input class="input" type="text" id="nom" name="Nom" required placeholder="Nom, exemple: 'Paco'" aria-label="Nom"><br>
