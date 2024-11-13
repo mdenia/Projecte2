@@ -142,13 +142,13 @@ span:hover, span:focus {
     margin: 0%;
 }
 
-.divEventImage {
+.divEventImage, .divAnunciImage {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.EventImage {
+.EventImage, .AnunciImage {
     width: 250px;
     height: auto;
     

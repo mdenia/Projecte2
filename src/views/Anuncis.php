@@ -26,11 +26,11 @@
         <?php foreach ($consells as $consell) {
         ?>
         <div class="Anunci">
-        <div class="textAnunci">
-                <h2 class="left"><?=$consell["nomAnunci"]?></h2>
-                <p class="left"><?=$consell[""]?></p>
-                <p class="left"><?=$consell["Categoria"]?></p>
-                <p class="left"><?=$consell["Hashtags"]?></p>
+            <div class="textAnunci">
+                <div class="divEventTitle"><h2 class="left"><?=$consell["nomAnunci"]?></h2></div>
+                <div class="divAnunciImage"><img class="AnunciImage" src='<?=$consell["Imatge"]?>/0.png' alt='Imatge Anunci'></div>
+                <div class="divEventDate"><p class="left"><?=$consell["Categoria"]?></p></div>
+                <p class="left"><?=$consell["descripcioAnunci"]?></p>
             </div>
         </div>
         <?php

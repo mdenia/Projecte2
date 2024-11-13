@@ -10,11 +10,11 @@ class ConsellPDO
         $this->sql = $sql;
     }
 
-    public function addConsell($Title, $Description, $Text, $Hashtags)
+    public function addConsell($Title, $Description, $Text, $Hashtags, $Id_User)
     {
-        $query = "insert into Consell (Titol_Consell, Descripcio_Consell, Text_Explicatiu, Hashtags) VALUES (:Title, :Description, :Text, :Hashtags);";
+        $query = "insert into Consell (:Title, :Description, :Text, :Hashtags, Id_User) VALUES (Titol_Consell, Descripcio_Consell, Text_Explicatiu, Hashtags, Id_User);";
         $stm = $this->sql->prepare($query);
-        $stm->execute([":Title" => $Title, ":Description" => $Description, ":Text" => $Text, ":Hashtags" => $Hashtags]);
+        $stm->execute([":Title" => $Title, ":Description" => $Description, ":Text" => $Text, ":Hashtags" => $Hashtags, ":Id_User" => $Id_User]);
 
         if ($stm->errorCode() !== '00000') {
             $err = $stm->errorInfo();
