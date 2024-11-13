@@ -29,7 +29,7 @@
             <div class="textAnunci">
                 <div class="divEventTitle"><h2 class="left"><?=$consell["Titol_Anunci"]?></h2></div>
                 <div class="divAnunciImage"><img class="AnunciImage" src='<?=$consell["Imatge"]?>/0.png' alt='Imatge Anunci'></div>
-                <div class="divEventDate"><p class="left"><?=$consell["Categoria"]?></p></div>
+                <div class="Categoria"><p class="left"><?=$consell["Categoria"]?></p></div>
                 <p class="left"><?=$consell["Descripcio_Anunci"]?></p>
             </div>
         </div>
