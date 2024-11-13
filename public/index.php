@@ -12,6 +12,8 @@ include "../src/models/Db.php";
 include "../src/models/UserPDO.php";
 include "../src/models/EsdevenimentPDO.php";
 include "../src/middleware/Auth.php";
+include "../src/models/ConsellPDO.php";
+include "../src/models/AnunciPDO.php";
 
  $request = new \Emeset\Request();
  $response = new \Emeset\Response();
