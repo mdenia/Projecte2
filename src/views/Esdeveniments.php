@@ -34,18 +34,18 @@
         <div class="divEventDate"><p class="Eventp">Data: </p><p><?=$Events['Data']?></p></div>
         <div class="divEventHour"><p class="Eventp">Hora: </p><p><?=$Events['Hora']?></p></div>
         <div class="divEventLocation"><p class="Eventp">Localització: </p></div>
-          <div><a href="index.php?r=ViewLocation&map=<?=$Events["ID_Esdeveniment"]?>" class="btn btn-success">Veure Localització</a></div>
-        <!-- <div id="map">
+          <!-- <div><a href="index.php?r=ViewLocation&map=<?=$Events["ID_Esdeveniment"]?>" class="btn btn-success">Veure Localització</a></div> -->
+        <div id="map">
           <script>
-            var map = L.map('map').setView([<?php echo'$Events["Latitud"]'; ?>, <?php echo'$Events["Longitud"]'; ?>], 13);
+            var map = L.map('map').setView([<?php echo $Events["Latitud"]; ?>, <?php echo $Events["Longitud"]; ?>], 13);
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
               attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
-            L.marker([<?php echo'$Events["Latitud"]'; ?>, <?php echo'$Events["Longitud"]'; ?>]).addTo(map)
+            L.marker([<?php echo $Events["Latitud"]; ?>, <?php echo $Events["Longitud"]; ?>]).addTo(map)
             .bindPopup('Localització')
             .openPopup();
           </script>
-        </div> -->
+        </div>
         <?php if($Events['Tipus'] == 1) { ?>
           <p class="left">Interior</p>
         <?php } else { ?>
