@@ -80,11 +80,6 @@ body {
     height: 100px;
 }
 
-.imatgeEsdeveniment{
-    width: 10px;
-    height: auto;
-}
-
 .carousel-control-prev, .carousel-control-next {
     width: 75px;
     margin: 2%;
@@ -145,6 +140,34 @@ span:hover, span:focus {
 
 .ErrorP {
     margin: 0%;
+}
+
+.divEventImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.EventImage {
+    width: 250px;
+    height: auto;
+    
+}
+
+.divEventDate {
+    display: flex;
+}
+
+.divEventHour {
+    display: flex;
+}
+
+.Eventp {
+    font-weight: bold;
+}
+
+#map { 
+    height: 180px;
 }
 
 @media only screen and (max-width: 600px) {

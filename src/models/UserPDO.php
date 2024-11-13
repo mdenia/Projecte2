@@ -41,4 +41,19 @@ class UserPDO
                  return false;
                  }
     }
+
+    public function listUser(){
+        $query = "select ID_Usuari, Nom, Cognom, User, Mail, Password, Imatge from Usuari";
+        $User = [];
+        foreach ($this->sql->query($query, \PDO::FETCH_ASSOC) as $Esd) {
+            $User[$Esd["ID_Esdeveniment"]] = $Esd;
+        }
+    
+        if ($this->sql->errorCode() !== '00000') {
+            $err = $this->sql->errorInfo();
+            $code = $this->sql->errorCode();
+            die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
+        }
+        return $User;
+    }
 }

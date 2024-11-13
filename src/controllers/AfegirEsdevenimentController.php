@@ -15,7 +15,7 @@ function AfegirEsdevenimentController($request, $response, $container){
     $Hour = $request->get(INPUT_POST, "horaEsdeveniment");
     $Type = $request->get(INPUT_POST, "tipusEsdeveniment");
     $Num_Views = 0;
-    $ID_User = 1;
+    $ID_User = 12;
 
     $Esd->addEsdeveniment($Title, $Image, $Latitud, $Longitud, $Description, $Date, $Hour, $Type, $Num_Views, $ID_User);
 

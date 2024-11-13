@@ -93,6 +93,11 @@ elseif($r == "FormAnunci") {
   $response = FormAnunciController($request, $response, $container);
 }
 
+elseif($r == "ViewLocation") {
+  include "../src/controllers/ViewLocationController.php";
+  $response = ViewLocationController($request, $response, $container);
+}
+
 else {
      echo "No existeix la ruta";
  }
