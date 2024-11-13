@@ -18,4 +18,8 @@ class ProjectContainer extends \Emeset\Container {
     public function ConsellPDO(){
         return new ConsellPDO($this->sql->get());
     }
+
+    public function AnunciPDO(){
+        return new AnunciPDO($this->sql->get());
+    }
 }
