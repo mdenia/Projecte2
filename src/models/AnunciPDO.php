@@ -10,7 +10,7 @@ class AnunciPDO
     }
 
     public function addAnunci($Title, $Image, $Categoria, $Estat, $descripcio, $Id_User) {
-        $query = "insert into Anunci (:Titol_Anunci, :Imatge, :Estat, :Descripcio_Anunci, :Id_User) VALUES (nomAnunci, Imatge, Categoria, Estat, Descripcio_Anunci, Id_User);";
+        $query = "insert into Anunci (Titol_Anunci, Imatge, Estat, Descripcio_Anunci, Id_User) VALUES (:nomAnunci, :Imatge, :Categoria, :Estat, :Descripcio_Anunci, Id_User);";
         $stm = $this->sql->prepare($query);
         $stm->execute([":nomAnunci" => $Title, ":Imatge" => $Image, ":Categoria" => $Categoria, ":Estat" => $Estat, ":Descripcio_Anunci" => $descripcio, ":Id_User" => $Id_User]);
 
