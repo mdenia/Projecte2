@@ -1,6 +1,6 @@
 <?php
 
-class ConsellPDO
+class AnunciPDO
 {
 
     private PDO $sql;
@@ -9,27 +9,27 @@ class ConsellPDO
         $this->sql = $sql;
     }
 
-    public function addAnunci($Title, $Description, $Text, $Hashtags) {
-        $query = "insert into Consell (Titol_Consell, Descripcio_Consell, Text_Explicatiu, Hashtags) VALUES (:Title, :Description, :Text, :Hashtags);";
+    public function addAnunci($Title, $Image, $Categoria, $Estat, $descripcio, $Id_User) {
+        $query = "insert into Anunci (:Titol_Anunci, :Imatge, :Estat, :Descripcio_Anunci, :Id_User) VALUES (nomAnunci, Imatge, Categoria, Estat, Descripcio_Anunci, Id_User);";
         $stm = $this->sql->prepare($query);
-        $stm->execute([":Title" => $Title, ":Description" => $Description, ":Text" => $Text, ":Hashtags" => $Hashtags]);
+        $stm->execute([":nomAnunci" => $Title, ":Imatge" => $Image, ":Categoria" => $Categoria, ":Estat" => $Estat, ":Descripcio_Anunci" => $descripcio, ":Id_User" => $Id_User]);
 
         if ($stm->errorCode() !== '00000') {
             $err = $stm->errorInfo();
             die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
         }
     }
-    public function listConsell() {
-        $query = "select ID_Consell, Titol_Consell, Descripcio_Consell, Text_Explicatiu, Hashtags from Consell;";
-        $Consell = [];
+    public function listAnunci() {
+        $query = "select ID_Anunci, Titol_Anunci, Imatge, Categoria, Descripcio_Anunci from Anunci;";
+        $Anunci = [];
         foreach ($this->sql->query($query, \PDO::FETCH_ASSOC) as $url) {
-            $Consell[$url["ID_Consell"]] = $url;
+            $Anunci[$url["ID_Anunci"]] = $url;
         }
         if ($this->sql->errorCode() !== '00000') {
             $err = $this->sql->errorInfo();
             $code = $this->sql->errorCode();
             die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
         }
-        return $Consell;    
+        return $Anunci;    
     }
 }

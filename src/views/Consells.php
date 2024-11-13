@@ -28,7 +28,7 @@
         ?>
         <div class="Consell">
             <div class="textConsell">
-                <h2 class="left"><?=$consell["Titol_Consell"]?></h2>
+                <div class="divEventTitle"><h2 class="left"><?=$consell["Titol_Consell"]?></h2></div>
                 <p class="left"><?=$consell["Descripcio_Consell"]?></p>
                 <p class="left"><?=$consell["Text_Explicatiu"]?></p>
                 <p class="left"><?=$consell["Hashtags"]?></p>
