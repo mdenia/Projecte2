@@ -18,12 +18,10 @@ function UpdateUserController($request, $response, $container){
 
     $images = $_FILES["Image"];
 
-    for ($i = 0; $i < count($images["name"]); $i++) {
-        $actual = $images["name"][$i];
-        $actual = $i . "." . pathinfo($actual, PATHINFO_EXTENSION);
-        $images["name"][$i] = $actual;
-        move_uploaded_file($images["tmp_name"][$i], $Image . "/" . $actual);
-    }
+
+        $actual = $images["name"];
+        $actual =  "0." . pathinfo($actual, PATHINFO_EXTENSION);
+        move_uploaded_file($images["tmp_name"], $Image . "/" . $actual);
 
     return $response;
 }

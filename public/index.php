@@ -98,6 +98,12 @@ elseif($r == "ViewLocation") {
   $response = ViewLocationController($request, $response, $container);
 }
 
+elseif($r == "UpdateUser") {
+  include "../src/controllers/UpdateUserController.php";
+  $response = UpdateUserController($request, $response, $container);
+}
+
+
 else {
      echo "No existeix la ruta";
  }

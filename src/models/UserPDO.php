@@ -19,7 +19,6 @@ class UserPDO
 
         if ($stm->errorCode() !== '00000') {
             $err = $stm->errorInfo();
-            $code = $stm->errorCode();
             die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
         }
     }
@@ -51,9 +50,19 @@ class UserPDO
     
         if ($this->sql->errorCode() !== '00000') {
             $err = $this->sql->errorInfo();
-            $code = $this->sql->errorCode();
             die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
         }
         return $User;
+    }
+
+    public function updateUser($Name, $Surname, $User, $Mail, $Password, $Image) {
+        $query = "update Usuari Set Nom = :Nom, Cognom = :Cognom, User = :User, Mail = :Mail, Password = :Password, Imatge = :Imatge where ID_Usuari = :ID_User";
+        $stm = $this->sql->prepare($query);
+        $stm->execute([":Nom" => $Name, ":Cognom" => $Surname, ":User" => $User, ":Mail" => $Mail, ":Password" => password_hash($Password, PASSWORD_BCRYPT), ":Imatge" => $Image, "ID_User" => $_SESSION["User"]["ID_Usuari"]]);
+
+        if ($stm->errorCode() !== '00000') {
+            $err = $stm->errorInfo();
+            die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
+        }
     }
 }
