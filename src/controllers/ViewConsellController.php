@@ -2,9 +2,13 @@
 
 function ViewConsellController($request, $response, $container){
 
-    $name = $request->get(INPUT_GET, "name");
+    $consellPDO = $container->ConsellPDO();
+    $consell = $consellPDO->listConsell();
 
+    $name = $request->get(INPUT_GET, "name");
+    
     $response->set("name", $name);
+    $response->set("Consell", $consell);
 
     $response->setTemplate("Consells.php");
 

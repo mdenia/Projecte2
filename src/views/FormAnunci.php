@@ -30,7 +30,7 @@
                     <option value="Categoria3">Categoria3</option>
                     <option value="Categoria4">Categoria4</option>
                 </select><br>
-                <label for="descripcioAnunci">Descripció Esdeveniment:</label><br>
+                <label for="descripcioAnunci">Descripció Anunci:</label><br>
                 <textarea class="textarea" id="descripcioAnunci" name="descripcioAnunci" placeholder="Descripcio Anunci ..........." required></textarea><br>
                 <input class="input" type="submit" value="Submit" name="Submit">
             </form>

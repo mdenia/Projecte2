@@ -23,11 +23,18 @@
         <div class="titol">
             <h1>Anuncis</h1>
         </div>
+        <?php foreach ($consells as $consell) {
+        ?>
         <div class="Anunci">
-          <div class="textAnunci">
-            <h2>Anunci 1</h2>
-            <p>Descripció de l'Anunci 1</p>
-          </div>
+        <div class="textAnunci">
+                <h2 class="left"><?=$consell["nomAnunci"]?></h2>
+                <p class="left"><?=$consell[""]?></p>
+                <p class="left"><?=$consell["Categoria"]?></p>
+                <p class="left"><?=$consell["Hashtags"]?></p>
+            </div>
         </div>
+        <?php
+        }
+        ?>
     </body>
 </html>
