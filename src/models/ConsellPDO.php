@@ -14,7 +14,7 @@ class ConsellPDO
     {
         $query = "insert into Consell (Title, Description, Text, Hashtags, Id_User) VALUES (:Titol_Consell, :Descripcio_Consell, :Text_Explicatiu, :Hashtags, :Id_User);";
         $stm = $this->sql->prepare($query);
-        $stm->execute([":Title" => $Title, ":Descripcio_Consell" => $Description, ":Text_Explicatiu" => $Text, ":Hashtags" => $Hashtags, ":Id_User" => $Id_User]);
+        $stm->execute([":Titol_Consell" => $Title, ":Descripcio_Consell" => $Description, ":Text_Explicatiu" => $Text, ":Hashtags" => $Hashtags, ":Id_User" => $Id_User]);
 
         if ($stm->errorCode() !== '00000') {
             $err = $stm->errorInfo();
