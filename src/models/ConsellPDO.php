@@ -12,7 +12,7 @@ class ConsellPDO
 
     public function addConsell($Title, $Description, $Text, $Hashtags, $Id_User)
     {
-        $query = "insert into Consell (Title, Description, Text, Hashtags, Id_User) VALUES (:Titol_Consell, :Descripcio_Consell, :Text_Explicatiu, :Hashtags, :Id_User);";
+        $query = "insert into Consell (Titol_Consell, Descripcio_Consell, Text_Explicatiu, Hashtags, Id_User) VALUES (:Title, :Description, :Text, :Hashtags, :Id_User);";
         $stm = $this->sql->prepare($query);
         $stm->execute([":Titol_Consell" => $Title, ":Descripcio_Consell" => $Description, ":Text_Explicatiu" => $Text, ":Hashtags" => $Hashtags, ":Id_User" => $Id_User]);
 
