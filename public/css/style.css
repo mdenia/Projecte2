@@ -171,9 +171,14 @@ span:hover, span:focus {
     height: 180px;
 }
 
-.UserImage {
+.divUserImage {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 250px;
+}
+
+.UserImage {
+    height: 150px;
     width: auto;
 }
 .ButtonLine, .ButtonLine2 {

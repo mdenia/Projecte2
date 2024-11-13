@@ -21,7 +21,7 @@
     </div>
     <h1 class="titolFormulari">Les teves Dades</h1>
     <h3 class="titolFormulari">La teva imatge de perfil</h3>
-    <div class="UserImage"><img src="<?php echo $User['Imatge'] . "/0.png" ?>" alt="Imatge de perfil"></div>
+    <div class="divUserImage"><img class="UserImage" src="<?php echo $User['Imatge'] . "/0.png" ?>" alt="Imatge de perfil"></div>
     <div class="menuform">
       <form class="form" action="index.php" method="post" enctype="multipart/form-data">
         <input type="hidden" name="r" value="UpdateUser">
