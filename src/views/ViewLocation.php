@@ -25,5 +25,19 @@
     <div class="titol">
       <h1>Localització Esdeveniment </h1>
     </div>
+    <div id="map">
+          <script>
+            // Initialize the map and set its view to the event's coordinates
+            var map = L.map("map").setView([<?php echo $Events["Latitud"]; ?>, <?php echo $Events["Longitud"]; ?>], 13);
+            // Add OpenStreetMap tiles to the map
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            // Add a marker to the map at the event's coordinates
+            L.marker([<?php echo $Events["Latitud"]; ?>, <?php echo $Events["Longitud"]; ?>]).addTo(map)
+            .bindPopup('Localització')
+            .openPopup();
+          </script>
+        </div>
   </body>
 </html>
