@@ -27,7 +27,7 @@
         <h1 class="titolFormulari">Login</h1>
         <div class="menuform">
             <!-- Form to log in -->
-            <form class="form" name="FormLogin" action="index.php" method="post" onsubmit="validateLogin()">
+            <form class="form" name="FormLogin" action="index.php" method="post" onsubmit="return validateLogin()">
                 <!-- Hidden input to specify the action -->
                 <input type="hidden" name="r" value="LoginUser">
                 <!-- Input for the username -->

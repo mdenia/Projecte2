@@ -18,7 +18,7 @@
         <h1 class="titolFormulari">Nou Esdeveniment</h1>
         <div class="menuform">
             <!-- Form to create a new event -->
-            <form class="form" name="formEsdeveniment" action="index.php" method="post" enctype="multipart/form-data" onsubmit="validateEsd()">
+            <form class="form" name="formEsdeveniment" action="index.php" method="post" enctype="multipart/form-data" onsubmit="return validateEsd()">
                 <!-- Hidden input to specify the action -->
                 <input type="hidden" name="r" value="CreateEsdeveniment">
                 <!-- Input for the event name -->

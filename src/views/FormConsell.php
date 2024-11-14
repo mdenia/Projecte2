@@ -19,7 +19,7 @@
         <h1 class="titolFormulari">Nou Consell</h1>
         <div class="menuform">
             <!-- Form to create a new tip -->
-            <form class="form" name="FormConsell" action="index.php" method="post" onsubmit="validateCnsll()">
+            <form class="form" name="FormConsell" action="index.php" method="post" onsubmit="return validateConsell()">
                 <!-- Hidden input to specify the action -->
                 <input type="hidden" name="r" value="CreateConsell">
                 <!-- Input for the tip title -->
