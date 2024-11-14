@@ -18,16 +18,23 @@
         </div>
         <h1 class="titolFormulari">Nou Consell</h1>
         <div class="menuform">
+            <!-- Form to create a new tip -->
             <form class="form" action="index.php" method="post" onsubmit="validateCnsll()">
+                <!-- Hidden input to specify the action -->
                 <input type="hidden" name="r" value="CreateConsell">
+                <!-- Input for the tip title -->
                 <label for="TitolCnsll">Titol Consell:</label><br>
                 <input class="input" type="text" id="TitolCnsll" name="TitolConsell" placeholder="Titol" required><br>
+                <!-- Textarea for the brief description of the tip -->
                 <label for="DescripcioCnsll">Descripció breu Consell:</label><br>
                 <textarea class="textarea" id="DescripcioCnsll" name="DescripcioConsell" placeholder="Descripcio" required></textarea><br>
+                <!-- Textarea for the explanatory text -->
                 <label for="Text_explicatiu">Text explicatiu</label><br>
                 <textarea class="textarea" id="Text_explicatiu" name="Text_explicatiu" placeholder="Format markdown" required></textarea><br>
+                <!-- Textarea for hashtags -->
                 <label for="Hashtags">Hashtags:</label><br>
                 <textarea class="textarea" id="Hashtags" name="Hashtags" require placeholder="Ex: #Sostenible,#Cendrassos,#Figueres.   (Sempre separats per una coma i sense espais entre ells)"></textarea><br>
+                <!-- Submit button -->
                 <input class="input" type="submit" value="Submit" name="Submit"></input>
             </form>
         </div>

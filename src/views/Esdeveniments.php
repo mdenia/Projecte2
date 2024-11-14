@@ -9,10 +9,11 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
-      <link rel="stylesheet" href="custom-bootstrap/css/bootstrap.css">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="leaflet/leaflet.css" />
-      <script src="leaflet/leaflet.js"></script>
+      <link rel="stylesheet" href="../../public/custom-bootstrap/css/bootstrap.css">
+      <link rel="stylesheet" href="../../public/css/style.css">
+      <link rel="stylesheet" href="../../public/leaflet/leaflet.css">
+      <script src="../../public/leaflet/leaflet.js"></script>
+      <script src="../../public/../src/Functions.js"></script>
   </head>
   <body>
     <div class="header">
@@ -25,7 +26,9 @@
     <div class="titol">
       <h1>Esdeveniments</h1>
     </div>
-    <?php foreach($Event as $Events) { ?>
+    <?php 
+    // Loop through each event and display its details
+    foreach($Event as $Events) { ?>
     <div class="esdeveniment">
       <div class="textEsdeveniment">
         <div class="divEventTitle"><h2 class="left"><?=$Events['Titol_Esdeveniment']?></h2></div>
@@ -37,15 +40,19 @@
           <!-- <div><a href="index.php?r=ViewLocation&map=<?=$Events["ID_Esdeveniment"]?>" class="btn btn-success">Veure Localització</a></div> -->
         <div id="map">
           <script>
+            // Initialize the map and set its view to the event's coordinates
             var map = L.map('map').setView([<?php echo $Events["Latitud"]; ?>, <?php echo $Events["Longitud"]; ?>], 13);
+            // Add OpenStreetMap tiles to the map
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
               attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
+            // Add a marker to the map at the event's coordinates
             L.marker([<?php echo $Events["Latitud"]; ?>, <?php echo $Events["Longitud"]; ?>]).addTo(map)
             .bindPopup('Localització')
             .openPopup();
           </script>
         </div>
+        <!-- Display whether the event is indoors or outdoors -->
         <?php if($Events['Tipus'] == 1) { ?>
           <p class="left">Interior</p>
         <?php } else { ?>

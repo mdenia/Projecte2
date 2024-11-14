@@ -36,10 +36,12 @@
     </div>
     <img src="Imatges_BDD/usuari.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewUser'">
   </div>
+  <!-- Carrousel -->
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="cards-wrapper">
+          <!-- Cards -->
           <div class="card">
             <img src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -123,9 +125,11 @@
         </div>
       </div>
     </div>
+    <!-- Button to previous carrousel-item -->
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev" aria-label="Carrousel Previ">
       <span class="fa fa-arrow-left" aria-hidden="true"></span>
     </a>
+    <!-- Button to next carrousel-item -->
     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next" aria-label="Carrousel Seguent">
       <span class="fa fa-arrow-right" aria-hidden="true"></span>
     </a>
