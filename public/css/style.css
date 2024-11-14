@@ -194,8 +194,10 @@ span:hover, span:focus {
 }
 
 /* Style for map container */
-#map { 
-    height: 180px;
+#map {
+    margin: auto;
+    height: 350px;
+    width: 500px;
 }
 
 /* Style for user image container */
