@@ -9,10 +9,10 @@ class AnunciPDO
         $this->sql = $sql;
     }
 
-    public function addAnunci($Title, $Image, $Categoria, $Estat, $descripcio, $Id_User) {
-        $query = "insert into Anunci (Titol_Anunci, Imatge, Estat, Descripcio_Anunci, Id_User) VALUES (:nomAnunci, :Imatge, :Categoria, :Estat, :Descripcio_Anunci, Id_User);";
+    public function addAnunci($Title, $Image, $Descripcio, $Estat, $Categoria, $Id_User) {
+        $query = "insert into Anunci (Titol_Anunci, Imatge, Descripcio_Anunci, Estat, Categoria, ID_Usuari) VALUES (:Title, :Image, :Descripcio_Anunci, :Estat, :Categoria, :ID_Usuari);";
         $stm = $this->sql->prepare($query);
-        $stm->execute([":nomAnunci" => $Title, ":Imatge" => $Image, ":Categoria" => $Categoria, ":Estat" => $Estat, ":Descripcio_Anunci" => $descripcio, ":Id_User" => $Id_User]);
+        $stm->execute([":Title" => $Title, ":Image" => $Image, ":Descripcio_Anunci" => $Descripcio, ":Estat" => $Estat, ":Categoria" => $Categoria, ":ID_Usuari" => $Id_User]);
 
         if ($stm->errorCode() !== '00000') {
             $err = $stm->errorInfo();

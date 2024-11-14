@@ -23,14 +23,14 @@
         <div class="titol">
             <h1>Anuncis</h1>
         </div>
-        <?php foreach ($consells as $consell) {
+        <?php foreach ($Anunci as $Anuncis) {
         ?>
         <div class="Anunci">
             <div class="textAnunci">
-                <div class="divEventTitle"><h2 class="left"><?=$consell["Titol_Anunci"]?></h2></div>
-                <div class="divAnunciImage"><img class="AnunciImage" src='<?=$consell["Imatge"]?>/0.png' alt='Imatge Anunci'></div>
-                <div class="Categoria"><p class="left"><?=$consell["Categoria"]?></p></div>
-                <p class="left"><?=$consell["Descripcio_Anunci"]?></p>
+                <div class="divEventTitle"><h2 class="left"><?=$Anuncis["Titol_Anunci"]?></h2></div>
+                <div class="divAnunciImage"><img class="AnunciImage" src='<?=$Anuncis["Imatge"]?>/0.png' alt='Imatge Anunci'></div>
+                <div class="Categoria"><p class="left"><?=$Anuncis["Categoria"]?></p></div>
+                <p class="left"><?=$Anuncis["Descripcio_Anunci"]?></p>
             </div>
         </div>
         <?php

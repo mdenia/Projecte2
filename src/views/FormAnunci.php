@@ -21,8 +21,8 @@
                 <input type="hidden" name="r" value="CreateAnunci">
                 <label for="nomAnunci">Nom Anunci:</label><br>
                 <input class="input" type="text" id="nomAnunci" name="nomAnunci" required placeholder="Nom Anunci"><br>
-                <label for="fileImatge">Imatges de l'Anunci: </label><br>
-                <input class="input" type="file" id="fileImatge" name="fileImatge" aria-label="Fitxer de la imatge" multiple required><br>
+                <label for="fileImage">Imatges de l'Anunci: </label><br>
+                <input class="input" type="file" id="fileImatge" name="fileImage[]" aria-label="Fitxer de la imatge" multiple required><br>
                 <label for="CategoriaAnunci">Categoria De l'Anunci:</label>
                 <select name="Categoria" id="Categoria" aria-label="Categoria De l'Anunci">
                     <option value="Categoria1">Categoria1</option>
