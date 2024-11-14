@@ -34,15 +34,15 @@
         <div class="divEventTitle"><h2 class="left"><?=$Events['Titol_Esdeveniment']?></h2></div>
         <div class="divEventImage"><img class="EventImage" src='<?=$Events["Imatge"]?>/0.png' alt='Imatge Esdeveniment'></div>
         <p class="left"><?=$Events['Descripcio_Esdeveniment']?></p>
-        <div class="divEventDate"><p class="Eventp">Data: </p><p><?=$Events['Data']?></p></div>
-        <div class="divEventHour"><p class="Eventp">Hora: </p><p><?=$Events['Hora']?></p></div>
+        <div class="divEvent"><p class="Eventp">Data: </p><p><?=$Events['Data']?></p></div>
+        <div class="divEvent"><p class="Eventp">Hora: </p><p><?=$Events['Hora']?></p></div>
         <div class="divEventLocation"><p class="Eventp">Localització: </p></div>
-        <div><a href="index.php?r=ViewLocation&Latitud=<?=$Events["Latiud"]?>&Longitud=<?=$Events["Longitud"]?>" class="btn btn-success">Veure Localització</a></div>
+          <div><a href="index.php?r=ViewLocation&Latitud=<?=$Events["Latitud"]?>&Longitud=<?=$Events["Longitud"]?>" class="btn btn-success">Veure Localització</a></div>
         <!-- Display whether the event is indoors or outdoors -->
         <?php if($Events['Tipus'] == 1) { ?>
-          <p class="left">Interior</p>
+          <div class="divEvent"><p class="Eventp">Tipus: </p><p class="left">Interior</p></div>
         <?php } else { ?>
-          <p class="left">Exterior</p>
+          <div class="divEvent"><p class="Eventp">Tipus: </p><p class="left">Exterior</p></div>
         <?php } ?>
       </div>
     </div>
