@@ -1,8 +1,11 @@
 services:
   php-apache:
     #Mapeig de ports
+    container_name: CMDCorporation_php
     ports:
       - "80:80"
+    restart: always
+    image: CMDCorporation_php
     #Construeix la imatge del contenidor segons el Dockerfile que hi ha a mysql
     build: 
       context: .
@@ -12,8 +15,12 @@ services:
       - .:/var/www/html
   mysql:
     #Mapeig de ports
+    container_name: CMDCorporation_mysql
     ports:
       - "3306:3306"
+
+    restart: always
+    image: CMDCorporation_mysql
     #Construeix la imatge del contenidor segons el Dockerfile que hi ha a mysql
     build:
       context: .

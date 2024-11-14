@@ -47,7 +47,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title0</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div><a href="index.php?r=ViewLocation&Latitud=<?=$Events["Latitud"]?>&Longitud=<?=$Events["Longitud"]?>" class="btn btn-primary">Veure Localització</a></div>
             </div>
           </div>
           <div class="card">
@@ -55,7 +55,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title0</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div><a href="index.php?r=ViewLocation&Latitud=<?=$Events["Latitud"]?>&Longitud=<?=$Events["Longitud"]?>" class="btn btn-primary">Veure Localització</a></div>
             </div>
           </div>
           <div class="card">
@@ -63,7 +63,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title0</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div><a href="index.php?r=ViewLocation&Latitud=<?=$Events["Latitud"]?>&Longitud=<?=$Events["Longitud"]?>" class="btn btn-primary">Veure Localització</a></div>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title1</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div><a href="index.php?r=ViewLocation&Latitud=<?=$Events["Latitud"]?>&Longitud=<?=$Events["Longitud"]?>" class="btn btn-primary">Veure Localització</a></div>
             </div>
           </div>
           <div class="card">
@@ -83,7 +83,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title1</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div><a href="index.php?r=ViewLocation&Latitud=<?=$Events["Latitud"]?>&Longitud=<?=$Events["Longitud"]?>" class="btn btn-primary">Veure Localització</a></div>
             </div>
           </div>
           <div class="card">
@@ -91,35 +91,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title1</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="cards-wrapper">
-          <div class="card">
-            <img src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title2</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title2</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="/Imatges_Index/Pou_Brasil.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title2</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div><a href="index.php?r=ViewLocation&Latitud=<?=$Events["Latitud"]?>&Longitud=<?=$Events["Longitud"]?>" class="btn btn-primary">Veure Localització</a></div>
             </div>
           </div>
         </div>
