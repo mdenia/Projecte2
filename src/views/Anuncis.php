@@ -15,15 +15,19 @@
     <body>
         <div class="header">
             <h1 class="CMDCorporation">CMD Corporation</h1>
+            <!-- Button to return index.php -->
             <div class="headerButtons">
                 <div><a href="index.php?r=" class="btn btn-primary">Torna Menú Principal</a></div>
             </div>
+            <!-- Image to login or register -->
             <img src="Imatges_BDD/usuari.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
         </div>
         <div class="titol">
             <h1>Anuncis</h1>
         </div>
-        <?php foreach ($Anunci as $Anuncis) {
+        <?php 
+        // Loop through each ad and display its details
+        foreach ($Anunci as $Anuncis) {
         ?>
         <div class="Anunci">
             <div class="textAnunci">

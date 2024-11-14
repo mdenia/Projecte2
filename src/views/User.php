@@ -23,23 +23,33 @@
     <h3 class="titolFormulari">La teva imatge de perfil</h3>
     <div class="divUserImage"><img class="UserImage" src="<?php echo $User['Imatge'] . "/0.png" ?>" alt="Imatge de perfil"></div>
     <div class="menuform">
+      <!-- Form to update user data -->
       <form class="form" action="index.php" method="post" enctype="multipart/form-data">
+        <!-- Hidden input to specify the action -->
         <input type="hidden" name="r" value="UpdateUser">
+        <!-- Input for the first name -->
         <label for="Nom">Nom:</label><br>
         <input class="input" type="text" id="nom" name="Nom" required value="<?php echo $User['Nom'] ?>"  aria-label="Nom"><br>
+        <!-- Input for the last name -->
         <label for="cognom">Cognom:</label><br>
         <input class="input" type="text" id="cognom" name="Cognom" required value="<?php echo $User['Cognom'] ?>" aria-label="Cognom"><br>
+        <!-- Input for the username -->
         <label for="Usuari">Nom d'Usuari</label><br>
         <input class="input" id="usuari" name="User" value="<?php echo $User['User'] ?>" required readonly aria-label="User"><br>
+        <!-- Input for the email -->
         <label for="Mail">El teu Mail:</label><br>
         <input class="email" type="email" id="email" name="Mail" require value=" <?php echo $User['Mail'] ?> " aria-label="Mail" readonly><br>
+        <!-- Input for the password -->
         <label for="Password">Vols canviar la Contrasenya?</label><br>
         <input type="password" class="Contrasenya" id="Contrasenya" name="Password" required placeholder="Intordueix la nova contrasenya" aria-label="Contrasenya"><br>
+        <!-- Input for uploading a profile image -->
         <label for="Imatge">Imatge de perfil</label><br>
         <input class="input" type="file" id="fileImatge" name="Image" aria-label="Fitxer de la imatge" required><br>
+        <!-- Submit button -->
         <input class="input" type="submit" value="Actualitza" name="Submit">
         </form>
     </div>
+    <!-- Button to log out -->
     <a href="index.php?r=LogoutUser" class="btn btn-primary">LogOut</a>
   </body>
 </html>
