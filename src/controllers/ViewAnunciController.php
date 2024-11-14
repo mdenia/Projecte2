@@ -1,16 +1,13 @@
 <?php
 
-function ViewAnunciController($request, $response, $container){
+function ViewAnunciController($request, $response, $container){ // Create a function that will redirect to the view with the bdd info
 
-    $AnunciPDO = $container->AnunciPDO();
-    $Anunci = $AnunciPDO->listAnunci();
-    
-    $name = $request->get(INPUT_GET, "name");
+    $AnunciPDO = $container->AnunciPDO(); // Call PDO from model
+    $Anunci = $AnunciPDO->listAnunci(); // Call 'listAnunci' from PDO
 
-    $response->set("name", $name);
-    $response->set("Anunci", $Anunci);
+    $response->set("Anunci", $Anunci); // Pass all the PDO info from the bdd to the view
 
-    $response->setTemplate("Anuncis.php");
+    $response->setTemplate("Anuncis.php"); // Redirect to the view
 
     return $response;
     

@@ -2,11 +2,7 @@
 
 function IndexController($request, $response, $container){
 
-    $name = $request->get(INPUT_GET, "name");
-
-    $response->set("name", $name);
-
-    $response->setTemplate("index.php");
+    $response->setTemplate("index.php"); // redirect to 'index.php'
 
     return $response;
     

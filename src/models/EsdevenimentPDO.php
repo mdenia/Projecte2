@@ -9,7 +9,7 @@ public function __construct(PDO $sql){
     $this->sql = $sql;
 }   
 
-public function addEsdeveniment($Title, $Image, $Latitud, $Longitud, $Description, $Date, $Hour, $Type, $Num_views, $ID_User){
+public function addEsdeveniment($Title, $Image, $Latitud, $Longitud, $Description, $Date, $Hour, $Type, $Num_views, $ID_User){ // Insert the info to the bdd
     $query = "insert into Esdeveniment (Titol_Esdeveniment, Imatge, Latitud, Longitud, Descripcio_Esdeveniment, Data, Hora, Tipus, Num_Visualitzacions, ID_Usuari) VALUES (:Title, :Image, :Latitud, :Longitud, :Description, :Date, :Hour, :Type, :Num_Views, :ID_User );";
     $stm = $this->sql->prepare($query);
     $stm->execute([":Title" => $Title, ":Image" => $Image, ":Latitud" => $Latitud, ":Longitud" => $Longitud, ":Description" => $Description, ":Date" => $Date, ":Hour" => $Hour, ":Type" => $Type, ":Num_Views" => $Num_views, ":ID_User" => $ID_User]);
@@ -20,7 +20,7 @@ public function addEsdeveniment($Title, $Image, $Latitud, $Longitud, $Descriptio
     }
 }
 
-public function listEsdeveniment(){
+public function listEsdeveniment(){ // List the info from the bdd to the view
     $query = "select ID_Esdeveniment, Titol_Esdeveniment, Imatge, Latitud, Longitud, Descripcio_Esdeveniment, Data, Hora, Tipus from Esdeveniment";
     $Esdeveniment = [];
     foreach ($this->sql->query($query, \PDO::FETCH_ASSOC) as $Esd) {

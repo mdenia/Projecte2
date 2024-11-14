@@ -10,7 +10,7 @@ class ConsellPDO
         $this->sql = $sql;
     }
 
-    public function addConsell($Title, $Description, $Text, $Hashtags, $Id_User)
+    public function addConsell($Title, $Description, $Text, $Hashtags, $Id_User) // Insert the info to the bdd
     {
         $query = "insert into Consell (Titol_Consell, Descripcio_Consell, Text_Explicatiu, Etiquetes, ID_Usuari) VALUES (:Title, :Description, :Text, :Hashtags, :Id_User);";
         $stm = $this->sql->prepare($query);
@@ -21,7 +21,7 @@ class ConsellPDO
             die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
         }
     }
-    public function listConsell(){
+    public function listConsell(){ // List the info from the bdd to the view
         $query = "select ID_Consell, Titol_Consell, Descripcio_Consell, Text_Explicatiu, Etiquetes from Consell;";
         $Consell = [];
         foreach ($this->sql->query($query, \PDO::FETCH_ASSOC) as $url) {
