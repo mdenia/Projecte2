@@ -24,14 +24,14 @@
             <h1>Consells</h1>
         </div>
         <?php        
-        foreach ($consells as $consell) {
+        foreach ($Consell as $consells) {
         ?>
         <div class="Consell">
             <div class="textConsell">
-                <div class="divEventTitle"><h2 class="left"><?=$consell["Titol_Consell"]?></h2></div>
-                <p class="left"><?=$consell["Descripcio_Consell"]?></p>
-                <p class="left"><?=$consell["Text_Explicatiu"]?></p>
-                <p class="left"><?=$consell["Hashtags"]?></p>
+                <div class="divEventTitle"><h2 class="left"><?=$consells["Titol_Consell"]?></h2></div>
+                <p class="left"><?=$consells["Descripcio_Consell"]?></p>
+                <p class="left"><?=$consells["Text_Explicatiu"]?></p>
+                <p class="left"><?=$consells["Etiquetes"]?></p>
             </div>
         </div>
         <?php

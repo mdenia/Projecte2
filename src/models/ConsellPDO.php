@@ -12,9 +12,9 @@ class ConsellPDO
 
     public function addConsell($Title, $Description, $Text, $Hashtags, $Id_User)
     {
-        $query = "insert into Consell (Titol_Consell, Descripcio_Consell, Text_Explicatiu, Hashtags, Id_User) VALUES (:Title, :Description, :Text, :Hashtags, :Id_User);";
+        $query = "insert into Consell (Titol_Consell, Descripcio_Consell, Text_Explicatiu, Etiquetes, ID_Usuari) VALUES (:Title, :Description, :Text, :Hashtags, :Id_User);";
         $stm = $this->sql->prepare($query);
-        $stm->execute([":Titol_Consell" => $Title, ":Descripcio_Consell" => $Description, ":Text_Explicatiu" => $Text, ":Hashtags" => $Hashtags, ":Id_User" => $Id_User]);
+        $stm->execute([":Title" => $Title, ":Description" => $Description, ":Text" => $Text, ":Hashtags" => $Hashtags, ":Id_User" => $Id_User]);
 
         if ($stm->errorCode() !== '00000') {
             $err = $stm->errorInfo();
@@ -22,7 +22,7 @@ class ConsellPDO
         }
     }
     public function listConsell(){
-        $query = "select ID_Consell, Titol_Consell, Descripcio_Consell, Text_Explicatiu, Hashtags from Consell;";
+        $query = "select ID_Consell, Titol_Consell, Descripcio_Consell, Text_Explicatiu, Etiquetes from Consell;";
         $Consell = [];
         foreach ($this->sql->query($query, \PDO::FETCH_ASSOC) as $url) {
             $Consell[$url["ID_Consell"]] = $url;
