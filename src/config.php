@@ -1,6 +1,6 @@
 <?php
 
-$config = [
+$config = [ // bdd information
     "db" => [
         "name" => "Projecte2",
         "host" => "projecte2-mysql-1",

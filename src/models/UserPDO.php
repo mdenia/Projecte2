@@ -12,7 +12,7 @@ class UserPDO
     }
 
    
-    public function add($Nom, $Cognom, $User, $Mail, $Password, $Imatge) {
+    public function add($Nom, $Cognom, $User, $Mail, $Password, $Imatge) { // Insert the info to the bdd
         $query = "insert into Usuari (Nom, Cognom, User, Mail, Password, Imatge) values (:Nom, :Cognom, :User, :Mail, :Password, :Imatge)";
         $stm = $this->sql->prepare($query);
         $stm->execute([":Nom" => $Nom, ":Cognom" => $Cognom, ":User" => $User, ":Mail" => $Mail, ":Password" => password_hash($Password, PASSWORD_BCRYPT), ":Imatge" => $Imatge,]);
@@ -23,7 +23,7 @@ class UserPDO
         }
     }
 
-    public function login($User, $Password) {
+    public function login($User, $Password) { // Get logged user information from bdd
         $query = "select ID_Usuari, Nom, Cognom, User, Mail, Password, Imatge from Usuari where User = :User";
         $stm = $this->sql->prepare($query);
         $stm->execute([":User" =>$User]);
@@ -34,14 +34,14 @@ class UserPDO
 
         $hash = $result['Password'];
 
-        if (password_verify($Password, $hash)) { // Comprovar password
+        if (password_verify($Password, $hash)) { // Find out hashed password
                     return $result;
                  } else {
                  return false;
                  }
     }
 
-    public function listUser(){
+    public function listUser(){ // List the info from the bdd to the view
         $query = "select ID_Usuari, Nom, Cognom, User, Mail, Password, Imatge from Usuari";
         $User = [];
         foreach ($this->sql->query($query, \PDO::FETCH_ASSOC) as $Usr) {
@@ -55,7 +55,7 @@ class UserPDO
         return $User;
     }
 
-    public function updateUser($Name, $Surname, $User, $Mail, $Password, $Image) {
+    public function updateUser($Name, $Surname, $User, $Mail, $Password, $Image) { // Update user information
         $query = "update Usuari Set Nom = :Nom, Cognom = :Cognom, User = :User, Mail = :Mail, Password = :Password, Imatge = :Imatge where ID_Usuari = :ID_User";
         $stm = $this->sql->prepare($query);
         $stm->execute([":Nom" => $Name, ":Cognom" => $Surname, ":User" => $User, ":Mail" => $Mail, ":Password" => password_hash($Password, PASSWORD_BCRYPT), ":Imatge" => $Image, "ID_User" => $_SESSION["User"]["ID_Usuari"]]);
