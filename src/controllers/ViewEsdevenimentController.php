@@ -1,16 +1,13 @@
 <?php
 
-function ViewEsdevenimentController($request, $response, $container){
+function ViewEsdevenimentController($request, $response, $container){ // Create a function that will redirect to the view with the bdd info
 
-    $Esd = $container->EsdevenimentPDO();
-    $Events = $Esd->listEsdeveniment();
+    $Esd = $container->EsdevenimentPDO(); // Call PDO from model
+    $Events = $Esd->listEsdeveniment(); // Call 'listEsdeveniment' from PDO
 
-    $name = $request->get(INPUT_GET, "name");
+    $response->set("Event", $Events); // Pass all the PDO info from the bdd to the view
 
-    $response->set("name", $name);
-    $response->set("Event", $Events);
-
-    $response->setTemplate("Esdeveniments.php");
+    $response->setTemplate("Esdeveniments.php"); // Redirect to the view
 
     return $response;
     

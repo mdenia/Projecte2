@@ -5,7 +5,7 @@ class Db {
 
     private PDO $sql;
 
-    public function __construct($config)
+    public function __construct($config) // Take bdd info from config.php and create a connection with the bdd
     {
         $dsn = "mysql:dbname={$config['db']['name']};host={$config['db']['host']}";
         
