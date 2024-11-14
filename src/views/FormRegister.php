@@ -16,7 +16,7 @@
         </div>
         <h1 class="titolFormulari">Register</h1>
         <div class="menuform">
-            <form class="form" action="index.php" method="post" enctype="multipart/form-data" onsubmit="validateUser()">
+            <form class="form" name="FormUser" action="index.php" method="post" enctype="multipart/form-data" onsubmit="validateUser()">
                 <input type="hidden" name="r" value="RegisterUser">
                 <label for="Nom">Nom:</label><br>
                 <input class="input" type="text" id="nom" name="Nom" required placeholder="Nom, exemple: 'Paco'" aria-label="Nom"><br>
