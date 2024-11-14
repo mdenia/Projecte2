@@ -1,6 +1,6 @@
 <?php
 if ($_POST["search"]=='1') {
-    $sql = "SELECT * FROM Esdeveniment WHERE Data >= '".$_POST["Start"]."' AND Data <= '".$_POST["End"]."'";
+    $sql = "select * FROM Esdeveniment WHERE Data >= '".$_POST["Start"]."' AND Data <= '".$_POST["End"]."'";
     if ($_POST["Start"] !== NULL) {
         $sql .= " AND Data >= '".$_POST["Start"]."'";
     }

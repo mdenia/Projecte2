@@ -34,6 +34,18 @@ public function listEsdeveniment(){ // List the info from the bdd to the view
     }
     return $Esdeveniment;
 }
+
+public function categorySelect($category) {
+    $query = "select ID_Esdeveniment, Titol_Esdeveniment, Imatge, Latitud, Longitud, Descripcio_Esdeveniment, Data, Hora, Tipus from Esdeveniment where Tipus like :category ;";
+    $stm = $this->sql->prepare($query);
+    $stm->execute([":category" => $category]);
+
+    $Esdeveniment = [];
+    foreach ($stm->fetchall(PDO::FETCH_ASSOC) as $Esd) {
+        $Esdeveniment[$Esd["ID_Esdeveniment"]] = $Esd;
+    }
+    return $Esdeveniment;
+}
 /*
 /*
 public function updateEsdeveniment($id, $title, $url, $description){
