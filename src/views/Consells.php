@@ -15,15 +15,18 @@
     <body>
         <div class="header">
             <h1 class="CMDCorporation">CMD Corporation</h1>
+            <!-- Button to return index.php -->
             <div class="headerButtons">
                 <div><a href="index.php?r=" class="btn btn-primary">Torna Menú Principal</a></div>
             </div>
+            <!-- Image to login or register -->
             <img src="Imatges_BDD/usuari.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
         </div>
         <div class="titol">
             <h1>Consells</h1>
         </div>
-        <?php        
+        <?php
+        // Loop through each tip and display its details
         foreach ($Consell as $consells) {
         ?>
         <div class="Consell">

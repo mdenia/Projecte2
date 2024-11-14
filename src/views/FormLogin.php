@@ -13,7 +13,8 @@
             <div class="headerButtons">
                 <div><a href="index.php?r=" class="btn btn-primary">Torna Menú Principal</a></div>
             </div>
-            <?php 
+            <?php
+            // Display error message if login credentials are incorrect
             if(isset($_GET['error'])) { 
                 if($_GET['error'] == 1) {
                     
@@ -25,12 +26,17 @@
         </div>
         <h1 class="titolFormulari">Login</h1>
         <div class="menuform">
+            <!-- Form to log in -->
             <form class="form" name="FormLogin" action="index.php" method="post" onsubmit="validateLogin()">
+                <!-- Hidden input to specify the action -->
                 <input type="hidden" name="r" value="LoginUser">
+                <!-- Input for the username -->
                 <label for="Usuari">Usuari</label><br>
                 <input class="input" id="Usuari" name="User" placeholder="Nom d'Usuari" required><br>
+                <!-- Input for the password -->
                 <label for="Contrasenya">Contrasenya</label><br>
                 <input type="password" class="Contrasenya" id="Contrasenya" name="Password" required placeholder="∗∗∗∗∗∗∗∗∗∗∗∗∗"><br>
+                <!-- Submit button -->
                 <input class="input" type="submit" value="Submit" name="Submit">
             </form>
         </div>
