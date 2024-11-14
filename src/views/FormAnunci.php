@@ -17,7 +17,7 @@
         </div>
         <h1 class="titolFormulari">Nou Anunci</h1>
         <div class="menuform">
-            <form class="form" action="index.php" method="post" enctype="multipart/form-data" onsubmit="validateAnunci()">
+            <form class="form" name="FormAnunci" action="index.php" method="post" enctype="multipart/form-data" onsubmit="validateAnunci()">
                 <input type="hidden" name="r" value="CreateAnunci">
                 <label for="nomAnunci">Nom Anunci:</label><br>
                 <input class="input" type="text" id="nomAnunci" name="nomAnunci" required placeholder="Nom Anunci"><br>

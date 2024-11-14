@@ -25,7 +25,7 @@
         </div>
         <h1 class="titolFormulari">Login</h1>
         <div class="menuform">
-            <form class="form" action="index.php" method="post" onsubmit="validateLogin()">
+            <form class="form" name="FormLogin" action="index.php" method="post" onsubmit="validateLogin()">
                 <input type="hidden" name="r" value="LoginUser">
                 <label for="Usuari">Usuari</label><br>
                 <input class="input" id="Usuari" name="User" placeholder="Nom d'Usuari" required><br>

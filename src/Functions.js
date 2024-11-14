@@ -1,47 +1,47 @@
 function validateEsd() {
-        let titol = document.forms["form"]["nomEsd"].value;
-        let latitude = document.forms["form"]["ubicacioEsdY"].value;
-        let longitude = document.forms["form"]["ubicacioEsdX"].value;
-        let caratula = document.forms["form"]["fileImage"].value;
-        let dia = document.forms["form"]["dataEsdD"].value;
-        let hora = document.forms["form"]["dataEsdH"].value;
-        let descripcio = document.forms["form"]["descripcioEsd"].value;
-        var caratulasplit = caratula.split('.');
-        // Check if each field is filled and has the correct file format
-        if (titol == "") {
-            alert("El titol esta buit");
-            return false;
-        } else if (latitude == "") {
-            alert("La latitud esta buida");
-            return false;
-        } else if (longitude == "") {
-            alert("La longitud esta buida");
-            return false;
-        } else if(caratula == "") {
-            alert("La caratula esta buida");
-            return false;
-        } else if(caratulasplit[1] !== "png" && caratulasplit[1] !== "jpg" && caratulasplit[1] !== "jpeg" && caratulasplit[1] !== "webp") {
-            alert("No es .png .jpg .jpeg o webp");
-            return false; 
-        } else if (dia == "") {
-            alert("El dia esta buit");
-            return false;
-        } else if (hora == "") {
-            alert("La hora esta buida");
-            return false;
-        } else if (descripcio == "") {
-            alert("La descripcio esta buida");
-            return false;
-        } else {
-        return true;
+    let titol = document.forms["formEsdeveniment"]["nomEsdeveniment"].value;
+    let latitude = document.forms["formEsdeveniment"]["Latitud"].value;
+    let longitude = document.forms["formEsdeveniment"]["Longitud"].value;
+    let caratula = document.forms["formEsdeveniment"]["fileImage"].value;
+    let dia = document.forms["formEsdeveniment"]["dataEsdeveniment"].value;
+    let hora = document.forms["formEsdeveniment"]["horaEsdeveniment"].value;
+    let descripcio = document.forms["formEsdeveniment"]["descripcioEsdeveniment"].value;
+    var caratulasplit = caratula.split('.');
+    // Check if each field is filled and has the correct file format
+    if (titol == "") {
+        alert("El titol esta buit");
+        return false;
+    } else if (latitude == "") {
+        alert("La latitud esta buida");
+        return false;
+    } else if (longitude == "") {
+        alert("La longitud esta buida");
+        return false;
+    } else if (caratula == "") {
+        alert("La caratula esta buida");
+        return false;
+    } else if (caratulasplit[1] !== "png" && caratulasplit[1] !== "jpg" && caratulasplit[1] !== "jpeg" && caratulasplit[1] !== "webp") {
+        alert("No es .png .jpg .jpeg o webp");
+        return false;
+    } else if (dia == "") {
+        alert("El dia esta buit");
+        return false;
+    } else if (hora == "") {
+        alert("La hora esta buida");
+        return false;
+    } else if (descripcio == "") {
+        alert("La descripcio esta buida");
+        return false;
+    } else {
+        alert("Cançó Creada") // If all is correct it shows this alert.
     }
 }
 
-function validateCnsll() {
-    let titol = document.forms["form"]["TitolCnsll"].value;
-    let descripcio = document.forms["form"]["DescripcioCnsll"].value;
-    let explicatiu = document.forms["form"]["Text_explicatiu"].value;
-    let Hashtags = document.forms["form"]["Hashtags"].value;
+function validateConsell() {
+    let titol = document.forms["FormConsell"]["TitolConsell"].value;
+    let descripcio = document.forms["FormConsell"]["DescripcioConsell"].value;
+    let explicatiu = document.forms["FormConsell"]["Text_explicatiu"].value;
+    let Hashtags = document.forms["FormConsell"]["Hashtags"].value;
     // Check if each field is filled and has the correct file format
     if (titol == "") {
         alert("El titol esta buit");
@@ -61,9 +61,9 @@ function validateCnsll() {
 }
 
 function validateAnunci() {
-    let titol = document.forms["form"]["TitolAnunci"].value;
-    let imatge = document.forms["form"]["fileImatge"].value;
-    let descripcio = document.forms["form"]["descripcioAnunci"].value;
+    let titol = document.forms["FormAnunci"]["NomAnunci"].value;
+    let imatge = document.forms["FormAnunci"]["fileImatge"].value;
+    let descripcio = document.forms["FormAnunci"]["descripcioAnunci"].value;
     var imatgesplit = imatge.split('.');
     if (titol == "") {
         alert("El titol esta buit");
@@ -72,7 +72,7 @@ function validateAnunci() {
         alert("La imatge esta buida");
         return false;
     } else if(imatgesplit[1] !== "png" && imatgesplit[1] !== "jpg" && imatgesplit[1] !== "jpeg" && imatgesplit[1] !== "webp") {
-        alert("No es .png .jpg .jpeg o webp");
+        alert("No es .png .jpg .jpeg o .webp");
         return false; 
     }else if(descripcio == "") {
         alert("La descripcio esta buida");
@@ -83,12 +83,12 @@ function validateAnunci() {
 }
 
 function validateUser() {
-    let name = document.forms["form"]["Nom"].value;
-    let surname = document.forms["form"]["cognom"].value;
-    let email = document.forms["form"]["Usuari"].value;
-    let username = document.forms["form"]["Mail"].value;
-    let password = document.forms["form"]["password"].value;
-    let Imatge = document.forms["form"]["Imatge"].value;
+    let name = document.forms["FormUser"]["Nom"].value;
+    let surname = document.forms["FormUser"]["Cognom"].value;
+    let email = document.forms["FormUser"]["User"].value;
+    let username = document.forms["FormUser"]["Mail"].value;
+    let password = document.forms["FormUser"]["Password"].value;
+    let Imatge = document.forms["FormUser"]["Image"].value;
     var imatgesplit = Imatge.split('.');
     if (name == "") {
         alert("El nom esta buit");
@@ -117,8 +117,8 @@ function validateUser() {
 }
 
 function validateLogin() {
-    let username = document.forms["form"]["Usuari"].value;
-    let password = document.forms["form"]["Contrasenya"].value;
+    let username = document.forms["FormLogin"]["User"].value;
+    let password = document.forms["FormLogin"]["Password"].value;
     if(username == "") {
         alert("El usuari esta buit");
         return false;
