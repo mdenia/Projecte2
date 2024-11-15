@@ -349,4 +349,9 @@ span:hover, span:focus {
 .title {
     font-size: 50px;    
 }
+#map {
+    margin: auto;
+    height: 1000px;
+    width: 800px;
+}
 }

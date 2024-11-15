@@ -23,7 +23,7 @@
       <img src="img\User.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
     </div>
     <div class="titol">
-      <h1>Localització Esdeveniment </h1>
+      <h1 class="titolFormulari">Localització Esdeveniment </h1>
     </div>
     <div id="map">
           <script>
