@@ -33,7 +33,7 @@ function validateEsd() {
         alert("La descripcio esta buida");
         return false;
     } else {
-        alert("Cançó Creada") // If all is correct it shows this alert.
+        alert("Esdeveniment creat correctament") // If all is correct it shows this alert.
     }
 }
 
