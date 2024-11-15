@@ -135,24 +135,3 @@ function validateLogin() {
         return true;
     }
 }
-
-function Date_Filter(Start, End) {
-    var search = "1";
-    var parameters = "search=" + search + "&Start=" + Start + "&End=" + End;
-        $.ajax({
-            data:parameters,
-            type: "POST",
-            timeout: 10000,
-            beforeSend: function () {
-                //$('#loading').show();
-            },
-            success: function (response) {
-                console.log('Inside');
-                document.getElementById("Result").innerHTML = response;
-            },
-            error: function (response, error) {
-                console.log("Error");
-                document.getElementById("error").innerHTML = response;
-            }
-        });
-}
