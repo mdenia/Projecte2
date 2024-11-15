@@ -1,4 +1,5 @@
 function validateEsd() {
+    // Get the values from the form fields
     let titol = document.forms["formEsdeveniment"]["nomEsdeveniment"].value;
     let latitude = document.forms["formEsdeveniment"]["Latitud"].value;
     let longitude = document.forms["formEsdeveniment"]["Longitud"].value;
@@ -38,6 +39,7 @@ function validateEsd() {
 }
 
 function validateConsell() {
+    // Get the values from the form fields
     let titol = document.forms["FormConsell"]["TitolConsell"].value;
     let descripcio = document.forms["FormConsell"]["DescripcioConsell"].value;
     let explicatiu = document.forms["FormConsell"]["Text_explicatiu"].value;
@@ -61,10 +63,12 @@ function validateConsell() {
 }
 
 function validateAnunci() {
+    // Get the values from the form fields
     let titol = document.forms["FormAnunci"]["NomAnunci"].value;
     let imatge = document.forms["FormAnunci"]["fileImatge"].value;
     let descripcio = document.forms["FormAnunci"]["descripcioAnunci"].value;
     var imatgesplit = imatge.split('.');
+    // Check if each field is filled and has the correct file format
     if (titol == "") {
         alert("El titol esta buit");
         return false;
@@ -83,6 +87,7 @@ function validateAnunci() {
 }
 
 function validateUser() {
+    // Get the values from the form fields
     let name = document.forms["FormUser"]["Nom"].value;
     let surname = document.forms["FormUser"]["Cognom"].value;
     let email = document.forms["FormUser"]["User"].value;
@@ -90,6 +95,7 @@ function validateUser() {
     let password = document.forms["FormUser"]["Password"].value;
     let Imatge = document.forms["FormUser"]["Image"].value;
     var imatgesplit = Imatge.split('.');
+    // Check if each field is filled and has the correct file format
     if (name == "") {
         alert("El nom esta buit");
         return false;
