@@ -34,7 +34,7 @@
         <div><a href="index.php?r=ViewAnunci" class="btn btn-warning">Tots Els Anuncis</a></div>
       </div>
     </div>
-    <img src="Imatges_BDD/usuari.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewUser'">
+    <img src="img\User.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewUser'">
   </div>
   <!-- Carrousel -->
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
