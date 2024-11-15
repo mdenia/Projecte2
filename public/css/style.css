@@ -252,7 +252,7 @@ span:hover, span:focus {
 }
 
 /* Style for input fields, labels, textareas, email fields, and password fields */
-.input, label, .textarea, .email, .Contrasenya {
+.input, label, .textarea, .email, .Contrasenya, .esdeveniment, .Consell, .Anunci {
     font-size: 50px;
     margin-bottom: 2%;
 }
