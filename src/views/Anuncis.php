@@ -31,7 +31,7 @@
         ?>
         <div class="Anunci">
             <div class="textAnunci">
-                <div class="divEventTitle"><h2 class="titolFormulari"><?=$Anuncis["Titol_Anunci"]?></h2></div>
+                <div class="divEventTitle"><h2 class="title"><?=$Anuncis["Titol_Anunci"]?></h2></div>
                 <div class="divAnunciImage"><img class="AnunciImage" src='<?=$Anuncis["Imatge"]?>/0.png' alt='Imatge Anunci'></div>
                 <div class="Categoria"><p class="left"><?=$Anuncis["Categoria"]?></p></div>
                 <p class="left"><?=$Anuncis["Descripcio_Anunci"]?></p>

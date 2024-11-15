@@ -338,4 +338,15 @@ span:hover, span:focus {
 .categoria {
     font-size: 50px;
 }
+.esdeveniment, .Consell, .Anunci {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #fbda77;
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.title {
+    font-size: 50px;    
+}
 }

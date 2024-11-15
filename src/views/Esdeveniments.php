@@ -41,7 +41,7 @@
       <div class="esdeveniment">
         <div class="textEsdeveniment">
           <div class="divEventTitle">
-            <h2 class="titolFormulari"><?= $Events['Titol_Esdeveniment'] ?></h2>
+            <h2 class="title"><?= $Events['Titol_Esdeveniment'] ?></h2>
           </div>
           <div class="divEventImage"><img class="EventImage" src='<?= $Events["Imatge"] ?>/0.png' alt='Imatge Esdeveniment'></div>
           <p class="left"><?= $Events['Descripcio_Esdeveniment'] ?></p>
