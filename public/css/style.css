@@ -282,14 +282,14 @@ span:hover, span:focus {
 }
 
 /* Style for each card */
-.card, .Anunci, .Consell, .esdeveniment {
+.card {
     width: 60%;
     align-items: center;
     font-size: 50px;
 }
 
 /* Style for card titles */
-.card-title, .divEventTitle {
+.card-title {
     font-size: 60px;
     font-weight: bold;
 }
@@ -331,5 +331,8 @@ span:hover, span:focus {
 .headerButtons {
     display: flex;
     flex-direction: column;
+}
+.divEventTitle {
+    font-size: 70px;
 }
 }
