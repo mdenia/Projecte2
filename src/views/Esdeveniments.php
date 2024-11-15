@@ -27,8 +27,8 @@
     </div>
     <img src="img\User.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
     <div>
-      <input type="radio" name="category" value="1">Interior</input>
-      <input type="radio" name="category" value="2">Exterior</input>
+      <input class="categoria" type="radio"  name="category" value="1">Interior</input>
+      <input class="categoria" type="radio" name="category" value="2">Exterior</input>
     </div>
   </div>
   <div class="titol">
@@ -41,7 +41,7 @@
       <div class="esdeveniment">
         <div class="textEsdeveniment">
           <div class="divEventTitle">
-            <h2 class="nomEsd"><?= $Events['Titol_Esdeveniment'] ?></h2>
+            <h2 class="titolFormulari"><?= $Events['Titol_Esdeveniment'] ?></h2>
           </div>
           <div class="divEventImage"><img class="EventImage" src='<?= $Events["Imatge"] ?>/0.png' alt='Imatge Esdeveniment'></div>
           <p class="left"><?= $Events['Descripcio_Esdeveniment'] ?></p>

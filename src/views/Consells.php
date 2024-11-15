@@ -31,7 +31,7 @@
         ?>
         <div class="Consell">
             <div class="textConsell">
-                <div class="divEventTitle"><h2 class="nomEsd"><?=$consells["Titol_Consell"]?></h2></div>
+                <div class="divEventTitle"><h2 class="titolFormulari"><?=$consells["Titol_Consell"]?></h2></div>
                 <p class="left"><?=$consells["Descripcio_Consell"]?></p>
                 <p class="left"><?=$consells["Text_Explicatiu"]?></p>
                 <p class="left"><?=$consells["Etiquetes"]?></p>
