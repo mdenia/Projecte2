@@ -27,8 +27,8 @@
     </div>
     <img src="img\User.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
     <div>
-      <input class="categoria" type="radio"  name="category" value="1">Interior</input>
-      <input class="categoria" type="radio" name="category" value="2">Exterior</input>
+      <input class="categoria" type="radio"  name="category" aria-label="Categoria Interior" value="1">Interior</input>
+      <input class="categoria" type="radio" name="category" aria-label="Categoria Exterior" value="2">Exterior</input>
     </div>
   </div>
   <div class="titol">
