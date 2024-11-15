@@ -32,7 +32,7 @@
     </div>
   </div>
   <div class="titol">
-    <h1>Esdeveniments</h1>
+    <h1 class="titolFormulari">Esdeveniments</h1>
   </div>
   <div id="events">
     <?php
@@ -41,7 +41,7 @@
       <div class="esdeveniment">
         <div class="textEsdeveniment">
           <div class="divEventTitle">
-            <h2 class="left"><?= $Events['Titol_Esdeveniment'] ?></h2>
+            <h2 class="nomEsd"><?= $Events['Titol_Esdeveniment'] ?></h2>
           </div>
           <div class="divEventImage"><img class="EventImage" src='<?= $Events["Imatge"] ?>/0.png' alt='Imatge Esdeveniment'></div>
           <p class="left"><?= $Events['Descripcio_Esdeveniment'] ?></p>

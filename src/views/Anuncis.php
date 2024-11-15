@@ -23,7 +23,7 @@
             <img src="img\User.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
         </div>
         <div class="titol">
-            <h1>Anuncis</h1>
+            <h1 class="titolFormulari">Anuncis</h1>
         </div>
         <?php 
         // Loop through each ad and display its details
@@ -31,7 +31,7 @@
         ?>
         <div class="Anunci">
             <div class="textAnunci">
-                <div class="divEventTitle"><h2 class="left"><?=$Anuncis["Titol_Anunci"]?></h2></div>
+                <div class="divEventTitle"><h2 class="nomEsd"><?=$Anuncis["Titol_Anunci"]?></h2></div>
                 <div class="divAnunciImage"><img class="AnunciImage" src='<?=$Anuncis["Imatge"]?>/0.png' alt='Imatge Anunci'></div>
                 <div class="Categoria"><p class="left"><?=$Anuncis["Categoria"]?></p></div>
                 <p class="left"><?=$Anuncis["Descripcio_Anunci"]?></p>

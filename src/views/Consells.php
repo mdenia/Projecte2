@@ -23,7 +23,7 @@
             <img src="img\User.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
         </div>
         <div class="titol">
-            <h1>Consells</h1>
+            <h1 class="titolFormulari">Consells</h1>
         </div>
         <?php
         // Loop through each tip and display its details
@@ -31,7 +31,7 @@
         ?>
         <div class="Consell">
             <div class="textConsell">
-                <div class="divEventTitle"><h2 class="left"><?=$consells["Titol_Consell"]?></h2></div>
+                <div class="divEventTitle"><h2 class="nomEsd"><?=$consells["Titol_Consell"]?></h2></div>
                 <p class="left"><?=$consells["Descripcio_Consell"]?></p>
                 <p class="left"><?=$consells["Text_Explicatiu"]?></p>
                 <p class="left"><?=$consells["Etiquetes"]?></p>
