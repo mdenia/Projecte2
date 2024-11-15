@@ -13,7 +13,7 @@
             <div class="headerButtons">
                 <div><a href="index.php?r=" class="btn btn-primary">Torna Menú Principal</a></div>
             </div>
-            <img src="Imatges_BDD/usuari.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
+            <img src="img\User.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
         </div>
         <h1 class="titolFormulari">Nou Anunci</h1>
         <div class="menuform">

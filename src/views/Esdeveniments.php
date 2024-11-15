@@ -25,7 +25,7 @@
     <div class="headerButtons">
       <div><a href="index.php?r=" class="btn btn-primary">Torna Menú Principal</a></div>
     </div>
-    <img src="Imatges_BDD/usuari.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
+    <img src="img\User.png" alt="Login" class="Login" onclick="location.href='index.php?r=ViewLogin'">
     <div>
       <input type="radio" name="category" value="1">Interior</input>
       <input type="radio" name="category" value="2">Exterior</input>
