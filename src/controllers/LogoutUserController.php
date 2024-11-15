@@ -4,7 +4,7 @@ function LogoutUserController($request, $response, $container){ // Create a func
 
 session_destroy(); // Destroy session to logout
 
-$response->setTemplate("index.php"); // redirect to 'index.php'
+$response->setTemplate("FormLogin.php"); // redirect to 'FormLogin.php'
 
 return $response;
 
