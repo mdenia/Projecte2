@@ -33,7 +33,7 @@
                 <textarea class="textarea" id="Text_explicatiu" name="Text_explicatiu" placeholder="Format markdown" required></textarea><br>
                 <!-- Textarea for hashtags -->
                 <label for="Hashtags">Hashtags:</label><br>
-                <textarea class="textarea" id="Hashtags" name="Hashtags" require placeholder="Ex: #Sostenible,#Cendrassos,#Figueres.   (Sempre separats per una coma i sense espais entre ells)"></textarea><br>
+                <textarea class="textarea" id="Hashtags" name="Hashtags" required placeholder="Ex: #Sostenible,#Cendrassos,#Figueres.   (Sempre separats per una coma i sense espais entre ells)"></textarea><br>
                 <!-- Submit button -->
                 <input class="input" type="submit" value="Submit" name="Submit"></input>
             </form>
